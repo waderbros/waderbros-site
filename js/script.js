@@ -1,1 +1,1 @@
-console.log('Wader Bros. site v4 loaded.');
+console.log('Wader Bros. site v7 loaded.');
