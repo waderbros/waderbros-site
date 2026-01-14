@@ -193,5 +193,10 @@ footer a:hover { text-decoration: underline; }
 
 .email-link {
   cursor: pointer;
+  color: var(--link-color, #007aff);
   text-decoration: underline;
+}
+
+.email-link:hover {
+  opacity: 0.7;
 }
