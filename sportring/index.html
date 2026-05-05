@@ -26,14 +26,14 @@
   }
   .feature-text {
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     width: 100%;
   }
   .feature-text h3 {
     font-size: 1.5em;
     font-weight: 700;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 8px 16px;
     border-left: 6px solid #007aff;
     background: linear-gradient(to right, #f0f7ff, transparent);
@@ -54,7 +54,7 @@
   .intro-text p {
     font-size: 1.2em !important;
     color: #444;
-    line-height: 1.8;
+    line-height: 1.5;
   }
   .feature-images {
     display: flex;
@@ -73,6 +73,28 @@
   }
   .watch-frame img {
     max-width: 185px;
+  }
+  .ipad-frame img {
+    max-width: 800px;
+    width: 100%;
+  }
+  .feature-text li {
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+  }
+  .new-badge {
+    background-color: #007aff;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 8px;
+    margin-left: 3em;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
   .summary-section {
     max-width: 1000px;
@@ -112,7 +134,7 @@
 
 <div class="description-box">
   <div class="intro-text">
-    <p>SportRing is an activity management app for Apple Watch that intuitively visualizes your workout distances—Walk, Run, and Cycle—using "Rings." Set your monthly goals and check your daily achievement at a glance. Its clean, minimal design provides effortless support in building your workout habit. Supported languages: English, Japanese, French, German, Spanish, Chinese (Simplified/Traditional), Korean, and Thai.</p>
+    <p>SportRing is an activity management app for Apple Watch that intuitively visualizes your workout distances—Walking, Running, and Cycling—using "Rings." Set your monthly goals and check your daily achievement at a glance. Its clean, minimal design provides effortless support in building your workout habit. Supported languages: English, Japanese, French, German, Spanish, Chinese (Simplified/Traditional), Korean, and Thai.</p>
   </div>
 
   <!-- Feature 1: Apple Watch -->
@@ -121,9 +143,10 @@
       <h3>Check Your Progress Anytime on Apple Watch</h3>
       <p>Check your monthly goals and progress anytime on your wrist.</p>
       <ul style="list-style: none; padding: 0; text-align: left; display: inline-block;">
-        <li>・ Automatic sync for Walk, Run, Cycle, Swim, Rowing, Ski, and Hiking distances</li>
+        <li>・ Automatic sync for Walking, Running, Cycling, Swimming, Hiking, Skiing, and Rowing distances</li>
+        <li><span class="new-badge">NEW</span><em><u>Now supporting Wheelchair and Hand Cycling! (May 6, 2026)</u></em></li>
         <li>・ Beautiful Ring animations tracking your progress</li>
-        <li>・ View your daily steps and 'Walking + Running' totals</li>
+        <li>・ View your daily steps and 'Walking + Running'</li>
         <li>・ Adjust goal distance, ring colors, and km/mi units directly on the standalone Watch app</li>
         <li>・ Rings update instantly after each workout</li>
         <li>・ Supports 4 types of Apple Watch complications. Quick progress checks and app launch with a tap</li>
@@ -134,6 +157,10 @@
       <div class="device-frame watch-frame"><img src="images/sportring-1.1.png" alt="Watch screen 1.1"></div>
       <div class="device-frame watch-frame"><img src="images/sportring-2.png" alt="Watch screen 2"></div>
       <div class="device-frame watch-frame"><img src="images/sportring-3.png" alt="Watch screen 3"></div>
+      <div class="device-frame watch-frame"><img src="images/sportring-3.1.png" alt="Watch screen 3.1"></div>
+      <div class="device-frame watch-frame"><img src="images/sportring-3.2.png" alt="Watch screen 3.2"></div>
+      <div class="device-frame watch-frame"><img src="images/sportring-3.3.png" alt="Watch screen 3.3"></div>
+      <div class="device-frame watch-frame"><img src="images/sportring-3.4.png" alt="Watch screen 3.4"></div>
     </div>
   </div>
 
@@ -165,7 +192,7 @@
         <li>・ Set goal distances and km/mi units for each workout in one place</li>
         <li>・ Use checkboxes to show or hide workouts</li>
         <li>・ Easily reorder workouts by dragging the handles on the right</li>
-        <li>・ Select your preferred display language via iPhone Settings → SportRing → Preferred Language</li>
+        <li>・ Select your preferred display language via iPhone Settings → Apps → SportRing → Preferred Language</li>
       </ul>
     </div>
     <div class="feature-images">
@@ -175,16 +202,32 @@
     </div>
   </div>
 
+  <!-- Feature 4: iPad Support -->
+  <div class="feature-block">
+    <div class="feature-text">
+      <h3>Full iPad Support</h3>
+      <p>View each workout at a glance with a large-screen layout.</p>
+      <ul style="list-style: none; padding: 0; text-align: left; display: inline-block;">
+        <li>・ View Rings and monthly graphs side-by-side</li>
+        <li>・ Smooth navigation with the sidebar</li>
+      </ul>
+    </div>
+    <div class="feature-images">
+      <div class="device-frame ipad-frame"><img src="images/sportring-7.png" alt="iPad Screen 1"></div>
+      <div class="device-frame ipad-frame"><img src="images/sportring-7.1.png" alt="iPad Screen 2"></div>
+    </div>
+  </div>
+
   <!-- How to Use and Best For -->
   <div class="summary-section">
     <h3>【How to Use】</h3>
     <ol>
-      <li>Select your workout (Walk, Run, Cycle, Swim, Rowing, Ski, or Hiking)</li>
+      <li>Select your workout (Walking, Running, Cycling, Swimming, Hiking, Skiing, Rowing, Wheelchair, or Hand Cycling)</li>
       <li>Set your monthly distance goals</li>
       <li>Exercise with Apple Watch to sync automatically</li>
       <li>Check daily activity on the monthly graph</li>
       <li>Customize your ring colors</li>
-      <li>View your daily steps and 'Walking + Running' totals alongside your other activities</li>
+      <li>View your daily steps and 'Walking + Running' alongside your other activities</li>
     </ol>
 
     <h3>【Best For】</h3>

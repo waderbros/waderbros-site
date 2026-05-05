@@ -26,14 +26,14 @@
   }
   .feature-text {
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     width: 100%;
   }
   .feature-text h3 {
     font-size: 1.5em;
     font-weight: 700;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 8px 16px;
     border-left: 6px solid #007aff;
     background: linear-gradient(to right, #f0f7ff, transparent);
@@ -54,7 +54,7 @@
   .intro-text p {
     font-size: 1.2em !important;
     color: #444;
-    line-height: 1.8;
+    line-height: 1.5;
   }
   .feature-images {
     display: flex;
@@ -73,6 +73,28 @@
   }
   .watch-frame img {
     max-width: 185px;
+  }
+  .ipad-frame img {
+    max-width: 800px;
+    width: 100%;
+  }
+  .feature-text li {
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+  }
+  .new-badge {
+    background-color: #007aff;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 8px;
+    margin-left: 4px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
   .summary-section {
     max-width: 1000px;
@@ -112,7 +134,7 @@
 
 <div class="description-box">
   <div class="intro-text">
-    <p>SportRingは、ウォーク・ラン・サイクルなどの運動距離を「リング」で直感的に可視化する、Apple Watch対応のアクティビティ管理アプリです。月間の目標距離を設定し、毎日の達成度をひと目で確認できます。シンプルで見やすいデザインにより、運動習慣づくりを無理なくサポートします。表示言語は英語、日本語、フランス語、ドイツ語、スペイン語、中国語（簡体字/繁体字）、韓国語、タイ語に対応しています。</p>
+    <p>SportRingは、ウォーキング・ランニング・サイクリングなどの運動距離を「リング」で直感的に可視化する、Apple Watch対応のアクティビティ管理アプリです。月間の目標距離を設定し、毎日の達成度をひと目で確認できます。シンプルで見やすいデザインにより、運動習慣づくりを無理なくサポートします。表示言語は英語、日本語、フランス語、ドイツ語、スペイン語、中国語（簡体字/繁体字）、韓国語、タイ語に対応しています。</p>
   </div>
 
   <!-- 機能1: Watch連携 -->
@@ -121,9 +143,9 @@
       <h3>Apple Watch で達成状況をいつでも確認</h3>
       <p>目標距離と現在の達成状況を、手元のリングでいつでも確認できます。</p>
       <ul style="list-style: none; padding: 0; text-align: left; display: inline-block;">
-        <li>・ ウォーク／ラン／サイクル／スイム／ローイング／スキー／ハイキングの月間距離を自動同期</li>
+        <li>・ ウォーキング／ランニング／サイクリング／スイミング／ハイキング/スキー/ローイングの月間距離を自動同期 &nbsp;&nbsp;&nbsp;&nbsp; <span class="new-badge">NEW</span><em><u>車椅子、ハンドサイクリングに対応しました！（2026/05/06）</u></em></li>
         <li>・ 達成状況を美しいリングアニメーションで表示</li>
-        <li>・ 日々の歩数や「ウォーキング＋ランニング」の合計を確認</li>
+        <li>・ 日々の歩数や「ウォーキング＋ランニング」を確認</li>
         <li>・ Apple Watch単体で「目標距離」「リングの色」「km/mi単位」の設定変更が可能</li>
         <li>・ ワークアウト後は、リングも即時に更新</li>
         <li>・ Apple Watchの4種類のコンプリケーションに対応。達成状況をすぐに確認、タップでアプリ起動</li>
@@ -134,6 +156,10 @@
       <div class="device-frame watch-frame"><img src="../images/sportring-1.1.png" alt="Watch画面1.1"></div>
       <div class="device-frame watch-frame"><img src="../images/sportring-2.png" alt="Watch画面2"></div>
       <div class="device-frame watch-frame"><img src="../images/sportring-3.png" alt="Watch画面3"></div>
+      <div class="device-frame watch-frame"><img src="../images/sportring-3.1.png" alt="Watch画面3.1"></div>
+      <div class="device-frame watch-frame"><img src="../images/sportring-3.2.png" alt="Watch画面3.2"></div>
+      <div class="device-frame watch-frame"><img src="../images/sportring-3.3.png" alt="Watch画面3.3"></div>
+      <div class="device-frame watch-frame"><img src="../images/sportring-3.4.png" alt="Watch画面3.4"></div>
     </div>
   </div>
 
@@ -165,7 +191,7 @@
         <li>・ ワークアウトごとの目標距離やkm/mi単位を一度に設定</li>
         <li>・ チェックボックスでワークアウトの表示・非表示を切り替え</li>
         <li>・ 右側のハンドルをドラッグして、表示順を簡単に並べ替え</li>
-        <li>・ iPhone の設定 → SportRing → ＜優先する言語＞から表示する言語を選択</li>
+        <li>・ iPhone の設定 → アプリ → SportRing → ＜優先する言語＞から表示する言語を選択</li>
       </ul>
     </div>
     <div class="feature-images">
@@ -175,16 +201,32 @@
     </div>
   </div>
 
+  <!-- 機能4: iPad対応 -->
+  <div class="feature-block">
+    <div class="feature-text">
+      <h3>iPadに正式対応</h3>
+      <p>大画面レイアウトで各ワークアウトを一目で確認</p>
+      <ul style="list-style: none; padding: 0; text-align: left; display: inline-block;">
+        <li>・ リングと月間グラフを並べて表示</li>
+        <li>・ サイドバーでスムーズに操作</li>
+      </ul>
+    </div>
+    <div class="feature-images">
+      <div class="device-frame ipad-frame"><img src="../images/sportring-7.png" alt="iPad画面1"></div>
+      <div class="device-frame ipad-frame"><img src="../images/sportring-7.1.png" alt="iPad画面2"></div>
+    </div>
+  </div>
+
   <!-- 使い方とおすすめ -->
   <div class="summary-section">
     <h3>【基本的な使い方】</h3>
     <ol>
-      <li>ワークアウトを選択（ウォーク／ラン／サイクル／スイム／ローイング／スキー／ハイキング）</li>
+      <li>ワークアウトを選択（ウォーキング／ランニング／サイクリング／スイミング／ハイキング/スキー/ローイング/車椅子/ハンドサイクリング）</li>
       <li>月間の目標距離を設定</li>
       <li>Apple Watchで運動すると、自動的に反映</li>
       <li>月間グラフで日ごとの運動量をチェック</li>
       <li>リングカラーをカスタマイズ</li>
-      <li>日々の歩数や「ウォーキング＋ランニング」の合計を、他のアクティビティとともに確認</li>
+      <li>日々の歩数や「ウォーキング＋ランニング」を、他のアクティビティとともに確認</li>
     </ol>
 
     <h3>【こんな方におすすめ】</h3>
