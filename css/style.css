@@ -41,7 +41,7 @@ html, body {
 .header-nav a {
   text-decoration: none;
   color: var(--fg);
-  font-size: 1.1rem; /* フォントを少し大きく */
+  font-size: 1.0rem; /* フォントを少し大きく */
   font-weight: 500;
 }
 
@@ -51,14 +51,14 @@ html, body {
 
 header {
   max-width: 960px;
-  margin: 40px auto;
+  margin: 15px auto; /* 30px -> 15px */
   padding: 0 16px;
   text-align: center;
 }
-header h1 { text-align: center; margin: 8px 0 0; font-size: 2.5rem; font-weight: 600; }
+header h1 { text-align: center; margin: 8px 0 0; font-size: 2.2rem; font-weight: 600; }
 header p.lead { 
   text-align: center; 
-  font-size: 1.5rem; 
+  font-size: 1.3rem; 
   font-weight: 500;
   letter-spacing: -0.01em;
   color: var(--muted); 
@@ -67,14 +67,14 @@ header p.lead {
 }
 .main {
   max-width: 960px;
-  margin: 24px auto;
+  margin: 12px auto; /* 16px -> 12px */
   padding: 0 16px;
   text-align: left;
 }
 .main h2 {
-  font-size: 1.8rem; /* Adjust as needed */
+  font-size: 1.6rem;
   font-weight: 600;
-  margin-top: 40px;
+  margin-top: 20px; /* 30px -> 20px */
   margin-bottom: 15px;
 }
 .cards {
@@ -91,23 +91,23 @@ header p.lead {
 footer {
   text-align: center;
   color: var(--muted);
-  padding: 48px 16px 64px;
-  font-size: 1.1rem;
+  padding: 32px 16px 48px; /* 48px 16px 64px -> 32px 16px 48px */
+  font-size: 1.0rem;
 }
 footer a {
-  color: var(--muted); /* Muted color for footer links */
+  color: var(--muted);
   text-decoration: none;
 }
 footer a:hover { text-decoration: underline; }
 .footer-nav {
   margin-bottom: 16px;
-  display: flex; /* gap を使うために flex にする */
-  justify-content: center; /* 中央揃え */
-  gap: 24px; /* ヘッダーと合わせる */
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .footer-nav a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--muted);
   text-decoration: none;
@@ -117,9 +117,9 @@ footer a:hover { text-decoration: underline; }
   margin-bottom: 12px;
 }
 .footer-copy {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
-.section { display: flex; justify-content: center; flex-wrap: wrap; margin: 40px auto; max-width: 1100px; padding: 0 16px; }
+.section { display: flex; justify-content: center; flex-wrap: wrap; margin: 20px auto; max-width: 1100px; padding: 0 16px; } /* 30px -> 20px */
 /* Device frames */
 .device-frame { background-color: #f8f9fa; border-radius: 40px; padding: 12px; display: inline-block;
   box-shadow: 0 4px 16px rgba(0,0,0,0.08); margin: 10px; }
@@ -133,7 +133,7 @@ footer a:hover { text-decoration: underline; }
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin: 80px auto;
+  margin: 30px auto; /* 60px -> 30px */
   max-width: 1100px;
   padding: 20px;
   text-align: left;
@@ -146,14 +146,15 @@ footer a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0; /* Keep this */
+  flex-shrink: 0;
 }
 .showcase-single-image {
-  max-width: 480px; /* Adjusted size */
-  display: block; /* For margin auto to work */
-  margin: 0 auto; /* Center the image */
+  width: 100%;
+  max-width: 400px; /* Reverted to 400px */
+  display: block;
+  margin: 0 auto;
   height: auto;
-  border-radius: 20px; /* Adjust as needed for the image */
+  border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: opacity 0.2s;
@@ -164,25 +165,39 @@ footer a:hover { text-decoration: underline; }
 .showcase-text {
   max-width: 850px;
 }
+
+/* Tablet / iPad responsiveness */
+@media (max-width: 1024px) {
+  .showcase {
+    gap: 30px;
+  }
+  .showcase-single-image {
+    max-width: 340px; /* Reverted to 340px */
+  }
+  .showcase-text h2 {
+    font-size: 2.2rem;
+  }
+}
+
 .showcase-text h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 0 0 10px;
 }
 .showcase-text p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: -0.01em;
   color: var(--muted);
   line-height: 1.4;
 }
 .main p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: var(--fg);
 }
 .main li {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: var(--fg);
 }
@@ -216,10 +231,10 @@ footer a:hover { text-decoration: underline; }
     margin-bottom: 20px;
   }
   header p.lead, .showcase-text p {
-    font-size: 1.2rem; /* モバイルでは少し小さくして読みやすく */
+    font-size: 1.1rem; /* モバイルでは少し小さくして読みやすく */
   }
   .showcase-text h2 {
-    font-size: 2.2rem;
+    font-size: 2.0rem;
   }
 }
 /* ===== Contact ===== */

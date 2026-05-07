@@ -8,7 +8,7 @@
 <style>
   .description-box {
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 20px auto; /* 30px -> 20px */
     padding: 0 20px;
     line-height: 1.8;
   }
@@ -16,8 +16,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 60px;
-    padding: 30px;
+    margin-bottom: 25px; /* 40px -> 25px */
+    padding: 20px;
     background-color: #fcfcfc;
     border-radius: 20px;
     border: 1px solid #eee;
@@ -30,7 +30,7 @@
     width: 100%;
   }
   .feature-text h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 700;
     color: #333;
     margin-bottom: 10px;
@@ -41,10 +41,10 @@
     border-radius: 0 4px 4px 0;
   }
   .summary-section h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 700;
     color: #333;
-    margin: 30px 0 20px;
+    margin: 15px 0 10px; /* 20px -> 15px */
     padding-bottom: 10px;
     border-bottom: 2px solid #333;
   }
@@ -52,7 +52,7 @@
   .description-box li,
   .summary-section li,
   .intro-text p {
-    font-size: 1.2em !important;
+    font-size: 1.1em !important;
     color: #444;
     line-height: 1.5;
   }
@@ -68,14 +68,14 @@
     flex: 0 0 auto;
   }
   .device-frame img {
-    max-width: 220px;
+    max-width: 200px;
     height: auto;
   }
   .watch-frame img {
-    max-width: 185px;
+    max-width: 160px;
   }
   .ipad-frame img {
-    max-width: 800px;
+    max-width: 400px;
     width: 100%;
   }
   .feature-text li {
@@ -98,13 +98,13 @@
   }
   .summary-section {
     max-width: 1000px;
-    margin: 40px auto;
-    padding: 40px;
+    margin: 20px auto; /* 30px -> 20px */
+    padding: 20px; /* 30px -> 20px */
     background-color: #f9f9f9;
     border-radius: 15px;
   }
   .intro-text {
-    margin-bottom: 50px;
+    margin-bottom: 20px; /* 30px -> 20px */
     text-align: left;
     color: #444;
   }
@@ -119,7 +119,10 @@
       padding: 20px;
     }
     header h1 {
-      font-size: 2.2rem !important;
+      font-size: 2.0rem !important; /* 2.2rem -> 2.0rem */
+    }
+    .ipad-frame img {
+      max-width: 340px; /* Tablet/Mobile size */
     }
   }
   /* 画像拡大用のスタイル */
@@ -163,7 +166,7 @@
   <a href="../index.html"><img class="logo" src="../assets/wader brothers.png?v=20260505" alt="Wader Bros. Logo"></a>
 </div>
 <header>
-  <h1 style="text-align: center; font-size: 3rem; font-weight: 700;">SportRing</h1>
+  <h1 style="text-align: center; font-size: 2.2rem; font-weight: 700;">SportRing</h1>
 </header>
 
 <div class="description-box">
