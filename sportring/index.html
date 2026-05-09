@@ -124,36 +124,15 @@
     .ipad-frame img {
       max-width: 340px; /* Tablet/Mobile size */
     }
-  }
-  /* 画像拡大用のスタイル */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-  }
-  .modal img {
-    max-width: 50%;
-    max-height: 50%;
-    width: auto;
-    height: auto;
-    box-shadow: 0 10px 50px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    transition: max-width 0.2s, max-height 0.2s;
-  }
-  .modal.is-ipad img {
-    max-width: 80%;
-    max-height: 80%;
+    .watch-frame {
+      flex: 0 0 calc(50% - 5px);
+    }
+    .watch-frame img {
+      width: 100%;
+      max-width: 100%;
+    }
   }
   .device-frame img {
-    cursor: pointer;
     transition: opacity 0.2s;
   }
   .device-frame img:hover {
@@ -295,31 +274,5 @@
     © Wader Bros.
   </div>
 </footer>
-
-<!-- 画像拡大用モーダル -->
-<div id="imageModal" class="modal" onclick="this.style.display='none'; this.classList.remove('is-ipad');">
-  <img id="modalImage" src="" alt="Zoomed Image">
-</div>
-
-<script>
-  // すべてのデバイスフレーム内の画像にクリックイベントを設定
-  document.querySelectorAll('.device-frame img').forEach(img => {
-    img.onclick = function() {
-      const modal = document.getElementById('imageModal');
-      const modalImg = document.getElementById('modalImage');
-      modalImg.src = this.src; // クリックされた画像のURLをセット
-      
-      // iPad用のフレーム内の画像かチェック
-      if (this.closest('.ipad-frame')) {
-        modal.classList.add('is-ipad');
-      } else {
-        modal.classList.remove('is-ipad');
-      }
-      
-      modal.style.display = 'flex'; // モーダルを表示
-    };
-  });
-</script>
-
 </body>
 </html>
