@@ -3,276 +3,182 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SportRing | Wader Bros.</title>
+<title>SportRing | Details & Manual | Wader Bros.</title>
 <link rel="stylesheet" href="../css/style.css">
-<style>
-  .description-box {
-    max-width: 1000px;
-    margin: 20px auto; /* 30px -> 20px */
-    padding: 0 20px;
-    line-height: 1.8;
-  }
-  .feature-block {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 25px; /* 40px -> 25px */
-    padding: 20px;
-    background-color: #fcfcfc;
-    border-radius: 20px;
-    border: 1px solid #eee;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .feature-text {
-    text-align: left;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  .feature-text h3 {
-    font-size: 1.3em;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 10px;
-    padding: 8px 16px;
-    border-left: 6px solid #007aff;
-    background: linear-gradient(to right, #f0f7ff, transparent);
-    display: block;
-    border-radius: 0 4px 4px 0;
-  }
-  .summary-section h3 {
-    font-size: 1.3em;
-    font-weight: 700;
-    color: #333;
-    margin: 15px 0 10px; /* 20px -> 15px */
-    padding-bottom: 10px;
-    border-bottom: 2px solid #333;
-  }
-  .description-box p, 
-  .description-box li,
-  .summary-section li,
-  .intro-text p {
-    font-size: 1.1em !important;
-    color: #444;
-    line-height: 1.5;
-  }
-  .feature-images {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .device-frame {
-    margin: 0;
-    flex: 0 0 auto;
-  }
-  .device-frame img {
-    max-width: 200px;
-    height: auto;
-  }
-  .watch-frame img {
-    max-width: 160px;
-  }
-  .ipad-frame img {
-    max-width: 400px;
-    width: 100%;
-  }
-  .feature-text li {
-    padding-left: 1.2em;
-    text-indent: -1.2em;
-  }
-  .new-badge {
-    background-color: #007aff;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 0.7em;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-weight: bold;
-    margin-right: 8px;
-    margin-left: 3em;
-    vertical-align: middle;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  .summary-section {
-    max-width: 1000px;
-    margin: 20px auto; /* 30px -> 20px */
-    padding: 20px; /* 30px -> 20px */
-    background-color: #f9f9f9;
-    border-radius: 15px;
-  }
-  .intro-text {
-    margin-bottom: 20px; /* 30px -> 20px */
-    text-align: left;
-    color: #444;
-  }
-  @media (max-width: 600px) {
-    .feature-images {
-      justify-content: center;
-    }
-    .feature-block {
-      padding: 20px;
-    }
-    .summary-section {
-      padding: 20px;
-    }
-    header h1 {
-      font-size: 2.0rem !important; /* 2.2rem -> 2.0rem */
-    }
-    .ipad-frame img {
-      max-width: 340px; /* Tablet/Mobile size */
-    }
-    .watch-frame {
-      flex: 0 0 calc(50% - 5px);
-    }
-    .watch-frame img {
-      width: 100%;
-      max-width: 100%;
-    }
-  }
-  .device-frame img {
-    transition: opacity 0.2s;
-  }
-  .device-frame img:hover {
-    opacity: 0.8;
-  }
-</style>
+<link rel="stylesheet" href="../css/sportring.css">
 </head>
-<body>
+<body class="sportring-page">
 <div class="header-content">
-  <a href="../index.html"><img class="logo" src="../assets/wader brothers.png?v=20260505" alt="Wader Bros. Logo"></a>
+  <a href="../index.html"><span class="logo-badge"><img class="logo" src="../assets/wader brothers.png?v=20260505" alt="Wader Bros. Logo"></span></a>
+  <nav class="header-nav">
+    <a href="../index.html">Home</a><span class="sep">|</span>
+    <a href="../help.html">Help</a><span class="sep">|</span>
+    <a href="../privacy.html">Privacy</a>
+  </nav>
 </div>
-<header>
-  <h1 style="text-align: center; font-size: 2.2rem; font-weight: 700;">SportRing</h1>
-</header>
 
-<div class="description-box">
-  <div class="intro-text">
-    <p>SportRing is an activity management app for Apple Watch that intuitively visualizes your workout distances—Walking, Running, and Cycling—using "Rings." Set your monthly goals and check your daily achievement at a glance. Its clean, minimal design provides effortless support in building your workout habit. Supported languages: English, Japanese, French, German, Spanish, Chinese (Simplified/Traditional), Korean, and Thai.</p>
+<main>
+  <div style="text-align: center; padding: 40px 20px 20px;">
+    <span class="app-title" style="font-size: 2.0rem; margin-bottom: 0;">SportRing</span>
   </div>
 
-  <!-- Feature 1: Apple Watch -->
-  <div class="feature-block">
-    <div class="feature-text">
-      <h3>Check Your Progress Anytime on Apple Watch</h3>
-      <p>Check your monthly goals and progress anytime on your wrist.</p>
-      <ul style="list-style: none; padding: 0; text-align: left; display: inline-block;">
-        <li>・ Automatic sync for Walking, Running, Cycling, Swimming, Hiking, Skiing, and Rowing distances</li>
-        <li><span class="new-badge">NEW</span><em><u>Now supporting Wheelchair and Hand Cycling! (May 6, 2026)</u></em></li>
-        <li>・ Beautiful Ring animations tracking your progress</li>
-        <li>・ View your daily steps and 'Walking + Running'</li>
-        <li>・ Adjust goal distance, ring colors, and km/mi units directly on the standalone Watch app</li>
-        <li>・ Rings update instantly after each workout</li>
-        <li>・ Supports 4 types of Apple Watch complications. Quick progress checks and app launch with a tap</li>
-      </ul>
+  <!-- Feature 1: Watch Integration -->
+  <section class="detail-feature reveal" style="border-top: none;">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>Check Progress Anytime on Your Apple Watch</h2>
+        <p>Keep your goals and current achievements right on your wrist.</p>
+        <ul class="detail-list">
+          <li class="no-bullet"><span class="new-badge">NEW</span>Now supports Wheelchair and Hand Cycling</li>
+          <li>Automatically syncs monthly distance for Walking, Running, Cycling, and Swimming.</li>
+          <li>Displays progress with beautiful ring animations</li>
+          <li>Check daily step counts and combined Walking + Running distance</li>
+          <li>Adjust "Target Distance," "Ring Color," and "km/mi units" directly on the Apple Watch</li>
+          <li>Rings update instantly after your workout</li>
+          <li>Supports multiple rich Apple Watch complications</li>
+        </ul>
+      </div>
+      <div class="detail-images watch-grid">
+        <img src="images/sportring-1.png?v=20260505" alt="Watch Screen 1">
+        <img src="images/sportring-1.1.png?v=20260505" alt="Watch Screen 1.1">
+        <img src="images/sportring-2.png?v=20260505" alt="Watch Screen 2">
+        <img src="images/sportring-3.png?v=20260505" alt="Watch Screen 3">
+        <img src="images/sportring-3.1.png?v=20260505" alt="Watch Screen 3.1">
+        <img src="images/sportring-3.4.png?v=20260505" alt="Watch Screen 3.4">
+      </div>
     </div>
-    <div class="feature-images">
-      <div class="device-frame watch-frame"><img src="images/sportring-1.png?v=20260505" alt="Watch screen 1"></div>
-      <div class="device-frame watch-frame"><img src="images/sportring-1.1.png?v=20260505" alt="Watch screen 1.1"></div>
-      <div class="device-frame watch-frame"><img src="images/sportring-2.png?v=20260505" alt="Watch screen 2"></div>
-      <div class="device-frame watch-frame"><img src="images/sportring-3.png?v=20260505" alt="Watch screen 3"></div>
-      <div class="device-frame watch-frame"><img src="images/sportring-3.1.png?v=20260505" alt="Watch screen 3.1"></div>
-      <div class="device-frame watch-frame"><img src="images/sportring-3.2.png?v=20260505" alt="Watch screen 3.2"></div>
-      <div class="device-frame watch-frame"><img src="images/sportring-3.3.png?v=20260505" alt="Watch screen 3.3"></div>
-      <div class="device-frame watch-frame"><img src="images/sportring-3.4.png?v=20260505" alt="Watch screen 3.4"></div>
-    </div>
-  </div>
+  </section>
 
-  <!-- Feature 2: Workout History -->
-  <div class="feature-block">
-    <div class="feature-text">
-      <h3>Workout History & Monthly Graphs</h3>
-      <p>The iPhone app provides a detailed list of your workouts, allowing you to review your progress alongside beautiful monthly graphs. With iPhone widget support, you can also track your progress right from your Home Screen.</p>
-      <ul style="list-style: none; padding: 0; text-align: left; display: inline-block;">
-        <li>・ Detailed lists for smart workout history management</li>
-        <li>・ Daily activity visualized with clear bar graphs</li>
-        <li>・ iPhone widget support to view your progress at a glance</li>
-      </ul>
+  <!-- Feature 2: iPhone Management -->
+  <section class="detail-feature reveal">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>Workout History and Monthly Graphs</h2>
+        <p>The iPhone app lets you review your daily workouts in a detailed list. Organize your progress with monthly graphs and keep track directly from your Home Screen with iOS widgets.</p>
+        <ul class="detail-list">
+          <li>Smartly manage your history with a list of all workouts</li>
+          <li>Clear bar charts showing daily activity levels</li>
+          <li>View current progress on your Home Screen with iOS widgets</li>
+        </ul>
+      </div>
+      <div class="detail-images">
+        <img src="images/sportring-4.png?v=20260505" alt="iPhone Graphs">
+        <img src="images/sportring-5.png?v=20260505" alt="iPhone Settings">
+        <img src="images/sportring-5.1.png?v=20260505" alt="iPhone Widget">
+      </div>
     </div>
-    <div class="feature-images">
-      <div class="device-frame"><img src="images/sportring-4.png?v=20260505" alt="iPhone Graph Screen"></div>
-      <div class="device-frame"><img src="images/sportring-5.png?v=20260505" alt="iPhone Settings Screen"></div>
-      <div class="device-frame"><img src="images/sportring-5.1.png?v=20260505" alt="iPhone Widget"></div>
-    </div>
-  </div>
+  </section>
 
-  <!-- Feature 3: Customized Settings -->
-  <div class="feature-block">
-    <div class="feature-text">
-      <h3>Personalized Settings</h3>
-      <p>Customize the app to match your style and preferences for a truly personal experience. You can also choose your display language from English, Japanese, French, German, Spanish, Chinese (Simplified/Traditional), Korean, and Thai.</p>
-      <ul style="list-style: none; padding: 0; text-align: left; display: inline-block;">
-        <li>・ Fully customizable Ring colors for each workout</li>
-        <li>・ Set goal distances and km/mi units for each workout in one place</li>
-        <li>・ Use checkboxes to show or hide workouts</li>
-        <li>・ Easily reorder workouts by dragging the handles on the right</li>
-        <li>・ Select your preferred display language via iPhone Settings → Apps → SportRing → Preferred Language</li>
-      </ul>
+  <!-- Feature 3: Customization -->
+  <section class="detail-feature reveal">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>Personalize Your Settings</h2>
+        <p>Freely customize the app to match your style and mood. It’s designed for ultimate ease of use.</p>
+        <ul class="detail-list">
+          <li>Freely customize ring colors for each workout type</li>
+          <li>Set target distances and km/mi preferences for each activity</li>
+          <li>Toggle activities on or off with simple checkboxes</li>
+          <li>Easily reorder activities by dragging the handle on the right</li>
+          <li>Supports 8 display languages (English, Japanese, etc.)</li>
+        </ul>
+      </div>
+      <div class="detail-images">
+        <img src="images/sportring-6.png?v=20260505" alt="iPhone Color Customization">
+        <img src="images/sportring-6.1.png?v=20260505" alt="iPhone Language Settings">
+        <img src="images/sportring-6.2.png?v=20260505" alt="iPhone Reorder">
+      </div>
     </div>
-    <div class="feature-images">
-      <div class="device-frame"><img src="images/sportring-6.png?v=20260505" alt="iPhone Color Customization"></div>
-      <div class="device-frame"><img src="images/sportring-6.1.png?v=20260505" alt="iPhone Language Settings"></div>
-      <div class="device-frame"><img src="images/sportring-6.2.png?v=20260505" alt="iPhone Reordering"></div>
-    </div>
-  </div>
+  </section>
 
   <!-- Feature 4: iPad Support -->
-  <div class="feature-block">
-    <div class="feature-text" style="margin-bottom: 0;">
-      <h3>Full iPad Support</h3>
-      <p>View each workout at a glance with a large-screen layout.</p>
-      <ul style="list-style: none; padding: 0; text-align: left; display: inline-block; margin-bottom: 0;">
-        <li>・ View Rings and monthly graphs side-by-side</li>
-        <li>・ Smooth navigation with the sidebar</li>
+  <section class="detail-feature reveal">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>Full iPad Support</h2>
+        <p>Check all your workouts at a glance on the large screen layout.</p>
+        <ul class="detail-list">
+          <li>View rings and monthly graphs side-by-side</li>
+          <li>Navigate smoothly with the sidebar</li>
+        </ul>
+      </div>
+      <div class="detail-images" style="align-items: center;">
+        <img src="images/sportring-7.png?v=20260505" alt="iPad Screen" class="ipad-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Summary -->
+  <section class="reveal">
+    <div class="summary-box">
+      <h3>Basic Usage</h3>
+      <ol>
+        <li>Select a workout (Walking, Running, Cycling, Swimming, etc.)</li>
+        <li>Set your monthly target distance</li>
+        <li>Your activity automatically syncs as you move with your Apple Watch</li>
+        <li>Check daily activity levels on the monthly graph</li>
+        <li>Customize your ring colors</li>
+        <li>Track daily steps and combined Walking + Running distance</li>
+      </ol>
+
+      <h3>Recommended For</h3>
+      <ul>
+        <li>🏃 Those who want to comfortably maintain an exercise habit</li>
+        <li>🎯 Those who want to simply record and manage monthly goals</li>
+        <li>⌚ Those who want to beautifully visualize Apple Watch data</li>
+        <li>✨ Those who value simplicity and ease of use</li>
       </ul>
     </div>
-    <div class="feature-images">
-      <div class="device-frame ipad-frame"><img src="images/sportring-7.png?v=20260505" alt="iPad Screen 1"></div>
-      <div class="device-frame ipad-frame"><img src="images/sportring-7.1.png?v=20260505" alt="iPad Screen 2"></div>
+  </section>
+
+  <!-- Behind the Scenes (Developer's Story) -->
+  <section class="reveal">
+    <div class="story-container">
+      <span class="story-tag">Behind the Scenes</span>
+      <h2 class="story-quote">Making Your Progress More Personal.</h2>
+      <div class="story-body">
+        <p>I love being active, but I felt that the standard activity rings on Apple Watch were a bit limited for tracking specific goals. I wanted to see exactly how many kilometers were left for my monthly running target or how much cycling I'd done this week, directly through that beautiful ring format.</p>
+        <p>That's why I created SportRing. Whether it's hiking, skiing, or rowing, I wanted to follow the specific sports I'm passionate about. My goal was to combine the elegance of native Apple apps with the customization that athletes need. That’s the heart behind this app.</p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- How to Use and Best For -->
-  <div class="summary-section">
-    <h3>【How to Use】</h3>
-    <ol>
-      <li>Select your workout (Walking, Running, Cycling, Swimming, Hiking, Skiing, Rowing, Wheelchair, or Hand Cycling)</li>
-      <li>Set your monthly distance goals</li>
-      <li>Exercise with Apple Watch to sync automatically</li>
-      <li>Check daily activity on the monthly graph</li>
-      <li>Customize your ring colors</li>
-      <li>View your daily steps and 'Walking + Running' alongside your other activities</li>
-    </ol>
+  <section class="section reveal" style="display: flex; flex-direction: column; align-items: center; padding: 100px 20px; background: #111;">
+    <h2 style="font-size: 3rem; margin-bottom: 20px;">Move more with the sports you love.</h2>
+    <a href="https://apps.apple.com/app/sportring/id6754791208" target="_blank">
+      <img src="../assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" style="height: 60px;">
+    </a>
+  </section>
+</main>
 
-    <h3>【Best For】</h3>
-    <ul style="list-style-type: none; padding-left: 0;">
-      <li>🏃 Looking to build a consistent workout habit</li>
-      <li>🎯 Anyone seeking simple, monthly goal tracking</li>
-      <li>⌚ Apple Watch owners who want better data visualization</li>
-      <li>✨ Those who value simplicity and ease of use</li>
-    </ul>
+<footer style="background: #000; padding: 60px 20px; border-top: 1px solid #333; text-align: center;">
+  <div class="footer-nav" style="margin-bottom: 24px; font-size: 1.1rem;">
+    <a href="../index.html" style="color: #86868b; text-decoration: none;">Home</a> <span style="color: #444; margin: 0 10px;">|</span> 
+    <a href="../help.html" style="color: #86868b; text-decoration: none;">Help</a> <span style="color: #444; margin: 0 10px;">|</span> 
+    <a href="../privacy.html" style="color: #86868b; text-decoration: none;">Privacy</a>
   </div>
-</div>
-
-<section class="section" style="display: flex; flex-direction: column; align-items: center; padding-top: 40px;">
-  <h2>Download Now</h2>
-  <a href="https://apps.apple.com/app/sportring/id6754791208" target="_blank" style="display: inline-block; margin-top: 10px;">
-    <img src="../assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg?v=20260505" alt="Download on the App Store" style="height: 57px;">
-  </a>
-</section>
-
-<footer>
-  <div class="footer-nav">
-    <a href="../index.html">Home</a> | <a href="../help.html">Help</a> | <a href="../privacy.html">Privacy</a>
+  <div class="footer-lang" style="margin-bottom: 12px; font-size: 1.0rem;">
+    <a href="index.html" style="color: #fff; text-decoration: none;">English</a> <span style="color: #444; margin: 0 5px;">/</span> <a href="ja/index.html" style="color: #86868b; text-decoration: none;">日本語</a>
   </div>
-  <div class="footer-lang">
-    <a href="index.html">English</a> / <a href="ja/index.html">日本語</a>
-  </div>
-  <div class="footer-copy">
+  <div class="footer-copy" style="color: #444; font-size: 0.9rem;">
     © Wader Bros.
   </div>
 </footer>
+
+<script>
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal);
+  reveal(); // Check on load
+</script>
 </body>
 </html>

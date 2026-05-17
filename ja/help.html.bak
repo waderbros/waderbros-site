@@ -3,36 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ヘルプ | Wader Bros.</title>
+<title>Help | Wader Bros.</title>
 <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/sportring.css">
-<style>
-  .content-page {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 0 20px;
-    line-height: 1.8;
-  }
-  .content-page h1 { font-size: 3rem; margin-bottom: 40px; text-align: center; color: #fff; }
-  .content-page h2 { font-size: 1.8rem; margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; color: #fff; }
-  .content-page h3 { color: #fff; margin-top: 30px; }
-  .content-page p, .content-page li { color: #d2d2d7; font-size: 1.2rem; line-height: 1.8; margin-bottom: 12px; }
-  .content-page strong { color: #fff; }
-</style>
 </head>
-<body class="sportring-page">
+<body>
 <div class="header-content">
-  <a href="index.html"><span class="logo-badge"><img class="logo" src="../assets/wader brothers.png?v=20260505" alt="Wader Bros. Logo"></span></a>
-  <nav class="header-nav">
-    <a href="../ja/index.html">ホーム</a><span class="sep">|</span>
-    <a href="../ja/help.html">ヘルプ</a><span class="sep">|</span>
-    <a href="../ja/privacy.html">プライバシー</a>
-  </nav>
+  <a href="index.html"><img class="logo" src="../assets/wader brothers.png" alt="Wader Bros. Logo"></a>
 </div>
-
-<main class="content-page">
-  <h1>ヘルプ</h1>
-  
+<header><h1>ヘルプ</h1></header>
+<main class="main">
   <h2>よくある質問（FAQ）</h2>
 
   <p><strong>Q. Apple Watch だけで使えますか？</strong><br>
@@ -90,14 +69,13 @@
         <li><strong>iPhone：</strong> iOS 17.6 以上</li>
         <li><strong>iPad：</strong> iPadOS 17.6 以上</li>
       </ul>
-</main>
-
-<footer style="background: #000; color: #86868b; padding: 60px 20px; border-top: 1px solid #333; text-align: center;">
-  <div class="footer-nav" style="margin-bottom: 24px;">
-    <a href="index.html" style="color: #86868b;">ホーム</a> | <a href="help.html" style="color: #fff;">ヘルプ</a> | <a href="privacy.html" style="color: #86868b;">プライバシー</a>
+  </main>
+<footer>
+  <div class="footer-nav">
+    <a href="index.html">ホーム</a> | <a href="help.html">ヘルプ</a> | <a href="privacy.html">プライバシー</a>
   </div>
   <div class="footer-lang">
-    <a href="../help.html" style="color: #86868b;">English</a> / <a href="help.html" style="color: #fff;">日本語</a>
+    <a href="../help.html">English</a> / <a href="help.html">日本語</a>
   </div>
   <div class="footer-copy">
     © Wader Bros.

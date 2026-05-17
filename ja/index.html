@@ -5,87 +5,123 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wader Bros. アプリ</title>
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/sportring.css">
 <link rel="icon" href="../assets/favicon.ico">
-</head>
-<body>
-<div class="header-content">
-  <a href="index.html"><img class="logo" src="../assets/wader brothers.png?v=20260505" alt="Wader Bros. Logo"></a>
-</div>
-<header style="text-align: center;">
-  <p class="lead">愛用のAppleデバイスを通じて、あなたの日常をより豊かに。</p>
-</header>
-<main class="main">
-  <div class="cards">
-
-
-  </div>
-</main>
-
-<section class="showcase">
-                                <div class="showcase-images">
-                                  <img src="../sportring/images/sportring-TOP.png?v=20260505" alt="SportRing App" class="showcase-single-image">
-                                </div>  <div class="showcase-text">
-    <h2>SportRing</h2>
-    <p>Apple Watch と iPhone で、美しくワークアウトを記録。</p>
-    <a href="../sportring/ja/index.html" class="btn">→ 詳しく見る</a>
-  </div>
-
-</section>
-
-<section class="section contact-section" style="padding-top: 40px; padding-bottom: 40px;">
-  <div style="max-width: 600px; margin: 0 auto; text-align: left;">
-    <h2 style="font-size: 2.2rem; font-weight: 700; margin-bottom: 10px;">お問い合わせ</h2>
-    <p style="font-size: 0.9rem; color: var(--muted); line-height: 1.6; margin-bottom: 20px;">私たちの活動にご関心をお寄せいただき、ありがとうございます。<br>いただいたメールにはすべて目を通し、必要に応じて返信させていただきます。</p>
-<span
-  class="email-link"
-  onclick="location.href='mailto:contact@waderbros.com'">
-  contact@waderbros.com
-</span>
-  </div>
-</section>
-
-<footer>
-  © Wader Bros. | <a href="../index.html">English</a> / <a href="index.html">日本語</a>
-</footer>
-
-<!-- 画像拡大用モーダル -->
 <style>
-  #imageModal.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.1); /* 少しだけ背景を暗くして視認性を上げます */
-    cursor: zoom-out;
-    align-items: center;
+  .screenshot-gallery {
+    display: flex;
     justify-content: center;
+    overflow-x: auto;
+    gap: 40px;
+    padding: 60px 20px;
+    scrollbar-width: none;
+    background: #000;
   }
-  #imageModal.modal img {
-    max-width: 80%;
-    max-height: 80%;
-    width: auto;
-    height: auto;
-    box-shadow: 0 10px 50px rgba(0,0,0,0.3);
-    border-radius: 10px;
+  .screenshot-gallery img {
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255,255,255,0.05);
+  }
+  .home-hero {
+    padding: 100px 20px 40px;
+    text-align: center;
   }
 </style>
-<div id="imageModal" class="modal" onclick="this.style.display='none';">
-  <img id="modalImage" src="" alt="拡大画像">
+</head>
+<body class="sportring-page">
+<div class="header-content">
+  <a href="index.html"><span class="logo-badge"><img class="logo" src="../assets/wader brothers.png?v=20260505" alt="Wader Bros. Logo"></span></a>
 </div>
 
+<main>
+  <!-- SportRing アプリケーションセクション -->
+  <section class="app-section" id="sportring">
+    <header class="home-hero">
+      <div class="reveal active">
+        <span class="app-title">SportRing</span>
+        <h1 style="font-size: 3.0rem; font-weight: 700; margin-bottom: 20px; line-height: 1.2;">お気に入りのワークアウトを、<br>Apple Watch のリングに</h1>
+      </div>
+    </header>
+
+    <!-- ③ スクリーンショットギャラリー (自動スクロール) -->
+    <section class="screenshot-gallery">
+      <div class="scrolling-track">
+        <!-- 1セット目 -->
+        <img src="../sportring/images/sportring-1.png" alt="Watch リング">
+        <img src="../sportring/images/sportring-3.4.png" alt="Watch 設定">
+        <img src="../sportring/images/sportring-3.1.png" alt="Watch コンプリケーション">
+        <img src="../sportring/images/sportring-4.png" alt="iPhone メイン">
+        <img src="../sportring/images/sportring-5.png" alt="iPhone グラフ">
+        <img src="../sportring/images/sportring-5.1.png" alt="iPhone ウィジェット">
+        <!-- 2セット目 (シームレスなループ用) -->
+        <img src="../sportring/images/sportring-1.png" alt="Watch リング">
+        <img src="../sportring/images/sportring-3.4.png" alt="Watch 設定">
+        <img src="../sportring/images/sportring-3.1.png" alt="Watch コンプリケーション">
+        <img src="../sportring/images/sportring-4.png" alt="iPhone メイン">
+        <img src="../sportring/images/sportring-5.png" alt="iPhone グラフ">
+        <img src="../sportring/images/sportring-5.1.png" alt="iPhone ウィジェット">
+      </div>
+    </section>
+
+    <!-- ② 3-Second Understanding Section (Quick Features) -->
+    <section class="quick-features reveal">
+      <div class="q-feature">
+        <h3>スポーツ専用リング</h3>
+        <p>ウォーキング、ランニング、サイクリング、スイミングなどを美しいリングで可視化。</p>
+      </div>
+      <div class="q-feature">
+        <h3>多彩な<br>コンプリケーション</h3>
+        <p>複数のコンプリケーションタイプで、文字盤から進捗をいつでも確認できます。</p>
+      </div>
+      <div class="q-feature">
+        <h3>iOS ウィジェット</h3>
+        <p>ホーム画面やロック画面から、その日の達成状況をひと目で把握。</p>
+      </div>
+      <div class="q-feature">
+        <h3>Apple ヘルスケア<br>同期</h3>
+        <p>既存の Apple ヘルスケアデータとシームレスに連携します。</p>
+      </div>
+    </section>
+
+    <!-- ギャラリー後のナビゲーションとCTA -->
+    <div style="text-align: center; padding: 20px 20px 80px;">
+      <div style="margin-bottom: 50px;">
+        <a href="../sportring/ja/index.html" class="btn-more">詳細・使い方を見る →</a>
+      </div>
+
+      <h2 style="font-size: 2.0rem; margin-bottom: 20px; color: #fff;">リングを完成させる準備はできましたか？</h2>
+      <a href="https://apps.apple.com/app/sportring/id6754791208" target="_blank">
+        <img src="../assets/Download_on_the_App_Store_Badge_JP_RGB_blk_092917.svg" alt="App Storeからダウンロード" style="height: 60px; filter: brightness(1.2);">
+      </a>
+    </div>
+  </section>
+</main>
+
+<section class="section contact-section" style="padding: 100px 20px; background: #000; border-top: 1px solid #333; margin: 0; max-width: 100%;">
+  <div style="max-width: 600px; margin: 0 auto; text-align: left;">
+    <h2 style="font-size: 2.2rem; font-weight: 700; margin-bottom: 10px; color: #fff;">お問い合わせ</h2>
+    <p style="color: #86868b; line-height: 1.6; margin-bottom: 20px;">私たちの活動にご関心をお寄せいただき、ありがとうございます。<br>いただいたメールにはすべて目を通し、必要に応じて返信させていただきます。</p>
+    <span class="email-link" onclick="location.href='mailto:contact@waderbros.com'">contact@waderbros.com</span>
+  </div>
+</section>
+
+<footer style="background: #000; color: #86868b; padding: 60px 20px; text-align: center; border-top: 1px solid #333;">
+  © Wader Bros. | <a href="../index.html" style="color: #86868b;">English</a> / <a href="index.html" style="color: #fff;">日本語</a>
+</footer>
+
 <script>
-  document.querySelectorAll('.showcase-single-image').forEach(img => {
-    img.onclick = function() {
-      const modal = document.getElementById('imageModal');
-      const modalImg = document.getElementById('modalImage');
-      modalImg.src = this.src;
-      modal.style.display = 'flex';
-    };
-  });
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      if (elementTop < windowHeight - 150) {
+        reveals[i].classList.add("active");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal);
+  reveal();
 </script>
-<script src="../js/script.js"></script>
 </body>
 </html>

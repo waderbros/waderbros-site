@@ -5,32 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy | Wader Bros.</title>
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/sportring.css">
-<style>
-  .content-page {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 0 20px;
-    line-height: 1.8;
-  }
-  .content-page h1 { font-size: 3rem; margin-bottom: 40px; text-align: center; color: #fff; }
-  .content-page h2 { font-size: 1.8rem; margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; color: #fff; }
-  .content-page p, .content-page li { color: #d2d2d7; font-size: 1.2rem; line-height: 1.8; margin-bottom: 12px; }
-</style>
 </head>
-<body class="sportring-page">
+<body>
 <div class="header-content">
-  <a href="index.html"><span class="logo-badge"><img class="logo" src="assets/wader brothers.png?v=20260505" alt="Wader Bros. Logo"></span></a>
-  <nav class="header-nav">
-    <a href="index.html">Home</a><span class="sep">|</span>
-    <a href="help.html">Help</a><span class="sep">|</span>
-    <a href="privacy.html">Privacy</a>
-  </nav>
+  <a href="index.html"><img class="logo" src="assets/wader brothers.png" alt="Wader Bros. Logo"></a>
 </div>
-
-<main class="content-page">
-  <h1>Privacy Policy</h1>
-  
+<header><h1>Privacy Policy</h1></header>
+<main class="main">
   <h2>1. Basic Policy</h2>
   <p>SportRing (“the App”) is an activity tracking app for Apple Watch and iPhone.<br>
   We respect your privacy and are committed to handling personal and health-related data safely and responsibly.</p>
@@ -59,13 +40,12 @@
   <p>The App is currently available for free as a beta version.<br>
   We may consider a paid version in the future, but this will not affect how your data is handled — your privacy will remain protected.</p>
 </main>
-
-<footer style="background: #000; color: #86868b; padding: 60px 20px; border-top: 1px solid #333; text-align: center;">
-  <div class="footer-nav" style="margin-bottom: 24px;">
-    <a href="index.html" style="color: #86868b;">Home</a> | <a href="help.html" style="color: #86868b;">Help</a> | <a href="privacy.html" style="color: #fff;">Privacy</a>
+<footer>
+  <div class="footer-nav">
+    <a href="index.html">Home</a> | <a href="help.html">Help</a> | <a href="privacy.html">Privacy</a>
   </div>
   <div class="footer-lang">
-    <a href="privacy.html" style="color: #fff;">English</a> / <a href="ja/privacy.html" style="color: #86868b;">日本語</a>
+    <a href="privacy.html">English</a> / <a href="ja/privacy.html">日本語</a>
   </div>
   <div class="footer-copy">
     © Wader Bros.
