@@ -20,8 +20,7 @@ body.sportring-page {
   border-bottom: 1px solid #333;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 100;
   padding: 12px 24px;
   display: grid;
@@ -45,6 +44,18 @@ body.sportring-page {
   justify-content: flex-end;
   align-items: center;
   font-size: 1.1rem; /* フッターと同じサイズ */
+}
+@media (max-width: 600px) {
+  .header-nav {
+    display: none;
+  }
+  .sportring-page .header-content {
+    display: flex;
+    justify-content: center;
+  }
+  .sportring-page .header-content::before {
+    display: none;
+  }
 }
 .header-nav a {
   color: #86868b;
@@ -149,6 +160,22 @@ body.sportring-page {
   display: block;
 }
 
+.free-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 2px 12px;
+  border-radius: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 /* Hero Image Adjustment */
 .hero-image {
   margin-top: 40px;
@@ -183,6 +210,7 @@ body.sportring-page {
 .scrolling-track img {
   height: 400px;
   width: auto;
+  max-width: none;
   border-radius: 20px;
   margin: 0 20px;
   box-shadow: 0 10px 30px rgba(255,255,255,0.05);
@@ -402,8 +430,10 @@ body.sportring-page {
 }
 .detail-images img {
   border-radius: 20px;
-  height: 350px; /* 250px -> 350px に拡大 */
+  height: auto;
+  max-height: 350px;
   width: auto;
+  max-width: 100%;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
@@ -422,8 +452,11 @@ body.sportring-page {
 
 .ipad-img {
   height: auto !important;
-  width: 100% !important;
-  max-width: 500px;
+  width: auto !important;
+  max-width: 100% !important;
+  max-height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 /* Summary Box */
@@ -516,11 +549,51 @@ footer {
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
-  .hero-copy h1, .home-hero h1 { font-size: 2.5rem !important; }
-  .hero-copy p, .home-hero p { font-size: 1.4rem !important; white-space: normal; }
+  .hero-copy h1, .home-hero h1 { font-size: 2.2rem !important; }
+  .hero-copy p, .home-hero p { font-size: 1.2rem !important; white-space: normal; }
   .emotion-feature { flex-direction: column !important; text-align: center; }
   .emotion-text h2 { font-size: 2.2rem; }
   .story-quote { font-size: 1.8rem; }
   .story-container { padding: 60px 20px; border-radius: 40px; }
-  .scrolling-track img { height: 300px; }
+  .scrolling-track img { height: 250px; }
+  .sportring-page .logo { width: 140px; }
+  .logo-badge { padding: 4px 15px; }
+  .detail-images.watch-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  /* 詳細セクションでテキストを常に上に表示 */
+  .detail-feature-content {
+    flex-direction: column !important;
+  }
+  .detail-feature:nth-child(even) .detail-feature-content {
+    flex-direction: column !important;
+  }
+  .detail-text {
+    order: 1;
+    width: 100%;
+  }
+  .detail-images {
+    order: 2;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+  .sportring-page .logo {
+    width: 120px;
+  }
+  .hero-copy h1, .home-hero h1 {
+    font-size: 1.8rem !important;
+  }
+  .app-title {
+    font-size: 1.2rem;
+  }
+  .detail-images.watch-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -19,8 +19,15 @@
   }
   .screenshot-gallery img {
     height: 400px;
+    width: auto;
+    max-width: none;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(255,255,255,0.05);
+  }
+  @media (max-width: 768px) {
+    .screenshot-gallery img {
+      height: 250px;
+    }
   }
   .home-hero {
     padding: 100px 20px 40px;
@@ -38,7 +45,7 @@
   <section class="app-section" id="sportring">
     <header class="home-hero">
       <div class="reveal active">
-        <span class="app-title">SportRing</span>
+        <span class="app-title">SportRing <span class="free-badge">無料</span></span>
         <h1 style="font-size: 3.0rem; font-weight: 700; margin-bottom: 20px; line-height: 1.2;">お気に入りのワークアウトを、<br>Apple Watch のリングに</h1>
       </div>
     </header>
@@ -89,7 +96,8 @@
         <a href="../sportring/ja/index.html" class="btn-more">詳細・使い方を見る →</a>
       </div>
 
-      <h2 style="font-size: 2.0rem; margin-bottom: 20px; color: #fff;">リングを完成させる準備はできましたか？</h2>
+      <h2 style="font-size: 2.0rem; margin-bottom: 10px; color: #fff;">リングを完成させる準備はできましたか？</h2>
+      <p style="color: #a1a1a6; font-size: 1.1rem; margin-bottom: 24px; font-weight: 500;">無料で今すぐ始めましょう</p>
       <a href="https://apps.apple.com/app/sportring/id6754791208" target="_blank">
         <img src="../assets/Download_on_the_App_Store_Badge_JP_RGB_blk_092917.svg" alt="App Storeからダウンロード" style="height: 60px; filter: brightness(1.2);">
       </a>
