@@ -8,25 +8,18 @@
 <link rel="stylesheet" href="../css/sportring.css">
 <link rel="icon" href="../assets/favicon.ico">
 <style>
-  .screenshot-gallery {
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
-    gap: 40px;
-    padding: 60px 20px;
-    scrollbar-width: none;
-    background: #000;
-  }
   .screenshot-gallery img {
     height: 400px;
     width: auto;
     max-width: none;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(255,255,255,0.05);
+    margin: 0 20px; /* gapの代わり */
   }
   @media (max-width: 768px) {
     .screenshot-gallery img {
       height: 250px;
+      margin: 0 10px;
     }
   }
   .home-hero {
@@ -114,7 +107,9 @@
 </section>
 
 <footer style="background: #000; color: #86868b; padding: 60px 20px; text-align: center; border-top: 1px solid #333;">
-  © Wader Bros. | <a href="../index.html" style="color: #86868b;">English</a> / <a href="index.html" style="color: #fff;">日本語</a>
+  <div class="footer-lang">
+    © Wader Bros. <span style="color: #444; margin: 0 10px;">|</span> <a href="../index.html" style="color: #86868b; text-decoration: none;">English</a> <span style="color: #444; margin: 0 5px;">/</span> <a href="index.html" style="color: #fff; text-decoration: none;">日本語</a>
+  </div>
 </footer>
 
 <script>

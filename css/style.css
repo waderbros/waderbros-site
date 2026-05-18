@@ -18,35 +18,124 @@ html, body {
 }
 /* Header */
 .header-content {
-  display: flex;
-  justify-content: center; /* ロゴを中央に */
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 12px 24px;
-  position: relative; /* position: absolute の基準点にする */
-  background: rgba(245,245,247,0.9); /* var(--bg) の色に合わせた透明度付き背景 */
-  z-index: 10;
+  padding: 40px 60px; /* Further increased padding */
+  background: rgba(245,245,247,0.9);
+  z-index: 100;
   border-bottom: 1px solid #eee;
 }
-.logo { width: 192px; height: auto; mix-blend-mode: multiply; }
 
-.header-nav {
-  position: absolute;
-  right: 20%; /* 右端から20%の位置に配置 */
-  top: 50%;
-  transform: translateY(-50%);
+.header-content > a {
+  grid-column: 2;
   display: flex;
-  gap: 24px; /* リンク間のスペース */
+  justify-content: center;
 }
 
-.header-nav a {
+.header-nav {
+  grid-column: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0;
+  padding-left: 40px; /* Ensure minimum gap on desktop */
+}
+
+/* Responsive adjustment: Move Nav below Logo on smaller screens */
+@media (max-width: 850px) {
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 32px;
+  }
+  .header-nav {
+    margin-top: 32px; /* Increased space between logo and nav on mobile */
+    justify-content: center;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.logo-badge {
+  display: inline-block;
+  background: #fff;
+  border-radius: 12px;
+  padding: 4px;
+  line-height: 0;
+}
+.logo { width: 180px; height: auto; mix-blend-mode: multiply; }
+
+/* Shared Navigation Styles for Header and Footer */
+.header-nav, .footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.header-nav a, .footer-nav a, .footer-lang {
   text-decoration: none;
-  color: var(--fg);
-  font-size: 1.0rem; /* フォントを少し大きく */
+  font-size: 1.0rem;
   font-weight: 500;
 }
 
-.header-nav a:hover {
-  text-decoration: underline;
+.header-nav span, .footer-nav span {
+  margin: 0 10px;
+}
+
+/* Responsive Navigation (Both Header and Footer) */
+@media (max-width: 375px) {
+  .header-nav a, .footer-nav a, .footer-lang {
+    font-size: 0.9rem;
+  }
+  .header-nav span, .footer-nav span {
+    margin: 0 8px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-nav a, .footer-nav a, .footer-lang {
+    font-size: 0.8rem;
+  }
+  .header-nav span, .footer-nav span {
+    margin: 0 5px !important;
+  }
+}
+
+/* Header Specific Colors */
+.header-nav a {
+  color: var(--muted);
+}
+.header-nav span {
+  color: #ccc;
+}
+.header-nav a.active {
+  color: var(--fg);
+}
+
+.sportring-page .header-nav a {
+  color: #86868b;
+}
+.sportring-page .header-nav span {
+  color: #444;
+}
+.sportring-page .header-nav a.active {
+  color: #fff;
+}
+
+/* Footer Specific Adjustments */
+.footer-nav {
+  margin-bottom: 24px;
+}
+.footer-lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-copy {
+  margin-top: 12px;
+  font-size: 0.8rem;
 }
 
 header {
@@ -87,38 +176,17 @@ header p.lead {
 .card a { color: var(--fg); text-decoration: none; }
 .card a:hover { text-decoration: underline; }
 
-
 footer {
   text-align: center;
   color: var(--muted);
   padding: 32px 16px 48px; /* 48px 16px 64px -> 32px 16px 48px */
-  font-size: 1.0rem;
 }
 footer a {
   color: var(--muted);
   text-decoration: none;
 }
 footer a:hover { text-decoration: underline; }
-.footer-nav {
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
 
-.footer-nav a {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.footer-lang, .footer-copy {
-  margin-bottom: 12px;
-}
-.footer-copy {
-  font-size: 0.8rem;
-}
 .section { display: flex; justify-content: center; flex-wrap: wrap; margin: 20px auto; max-width: 1100px; padding: 0 16px; } /* 30px -> 20px */
 /* Device frames */
 .device-frame { background-color: #f8f9fa; border-radius: 40px; padding: 12px; display: inline-block;
@@ -279,6 +347,39 @@ footer a:hover { text-decoration: underline; }
   transition: max-width 0.2s, max-height 0.2s;
 }
 .modal.is-ipad img {
-  max-width: 80%;
+  max-width: 800px;
   max-height: 80%;
+}
+
+/* Screenshot Gallery Infinite Scroll */
+.screenshot-gallery {
+  overflow: hidden !important; /* スクロールバーを隠す */
+  position: relative;
+  width: 100%;
+}
+
+.scrolling-track {
+  display: flex;
+  width: max-content; /* 中身に合わせて幅を広げる */
+  animation: scrolling 40s linear infinite;
+}
+
+.scrolling-track img {
+  flex-shrink: 0;
+}
+
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* 半分（1セット分）進んだら最初に戻る */
+}
+
+/* Pause on hover (optional, but good for UX) */
+.scrolling-track:hover {
+  animation-play-state: paused;
+}
+
+/* Footer Adjustments for all pages */
+.footer-copy {
+  margin-top: 12px;
+  font-size: 0.8rem;
 }
