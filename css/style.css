@@ -67,39 +67,48 @@ html, body {
 .logo { width: 180px; height: auto; mix-blend-mode: multiply; }
 
 /* Shared Navigation Styles for Header and Footer */
-.header-nav, .footer-nav {
+.header-nav, .footer-nav, .footer-lang {
   display: flex;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
 }
 
-.header-nav a, .footer-nav a, .footer-lang {
+.header-nav a, .footer-nav a, .footer-lang a {
   text-decoration: none;
   font-size: 1.0rem;
   font-weight: 500;
 }
 
-.header-nav span, .footer-nav span {
+.header-nav span, .footer-nav span, .footer-lang span {
   margin: 0 10px;
 }
 
 /* Responsive Navigation (Both Header and Footer) */
-@media (max-width: 375px) {
-  .header-nav a, .footer-nav a, .footer-lang {
+@media (max-width: 480px) {
+  .header-nav a, .footer-nav a, .footer-lang a {
     font-size: 0.9rem;
   }
-  .header-nav span, .footer-nav span {
-    margin: 0 8px !important;
+  .header-nav span, .footer-nav span, .footer-lang span {
+    margin: 0 6px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-nav a, .footer-nav a, .footer-lang a {
+    font-size: 0.78rem;
+  }
+  .header-nav span, .footer-nav span, .footer-lang span {
+    margin: 0 4px !important;
   }
 }
 
 @media (max-width: 320px) {
-  .header-nav a, .footer-nav a, .footer-lang {
-    font-size: 0.8rem;
+  .header-nav a, .footer-nav a, .footer-lang a {
+    font-size: 0.7rem;
   }
-  .header-nav span, .footer-nav span {
-    margin: 0 5px !important;
+  .header-nav span, .footer-nav span, .footer-lang span {
+    margin: 0 2px !important;
   }
 }
 
@@ -129,9 +138,7 @@ html, body {
   margin-bottom: 24px;
 }
 .footer-lang {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 .footer-copy {
   margin-top: 12px;
