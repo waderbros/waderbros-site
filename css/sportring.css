@@ -369,6 +369,7 @@ p, li {
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
+  width: 100%; /* 親要素いっぱいに広げる */
 }
 @media (min-width: 1025px) {
   .detail-feature-content {
@@ -380,7 +381,10 @@ p, li {
 }
 .detail-text {
   flex: 1;
-  min-width: 300px;
+  min-width: 0; /* 強制的に縮小を許可し、はみ出しを防ぐ */
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 .detail-text h2 {
   font-size: 2.2rem;
@@ -388,6 +392,9 @@ p, li {
   color: #ffffff;
   font-weight: 700;
   line-height: 1.3;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  line-break: strict;
 }
 @media (max-width: 1024px) {
   .detail-text h2 {
@@ -437,11 +444,13 @@ p, li {
   text-transform: uppercase;
 }
 .detail-images {
-  flex: 1.5;
+  flex: 1; /* 1.2から1に縮小し、テキストとのバランスを均等化 */
+  min-width: 0; /* 画像側も縮小を許可 */
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
+  max-width: 100%;
 }
 .detail-images img {
   border-radius: 20px;
@@ -555,7 +564,7 @@ p, li {
   display: inline-block;
   white-space: nowrap;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .text-nowrap {
     white-space: normal;
   }
