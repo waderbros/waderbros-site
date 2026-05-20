@@ -305,16 +305,16 @@ body.sportring-page {
   line-height: 1.8;
 }
 .content-page h1 { 
-  font-size: 3rem; 
+  font-size: 3.0rem; 
   margin-bottom: 40px; 
   text-align: center; 
   color: #fff; 
   word-break: keep-all; 
   line-break: strict;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
 }
 .content-page h2 { 
-  font-size: 1.8rem; 
+  font-size: 2.2rem; 
   margin-top: 40px; 
   margin-bottom: 20px; 
   border-bottom: 1px solid #333; 
@@ -322,7 +322,7 @@ body.sportring-page {
   color: #fff;
   word-break: keep-all; 
   line-break: strict;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
 }
 .content-page h3 { color: #fff; margin-top: 30px; }
 .content-page p, .content-page li { color: #d2d2d7; font-size: 1.2rem; line-height: 1.8; margin-bottom: 12px; }
@@ -528,23 +528,22 @@ body.sportring-page {
 /* Contact & Footer */
 .text-nowrap {
   display: inline-block;
+  white-space: nowrap;
 }
 .bottom-cta-title {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin-bottom: 10px;
   text-align: center;
-  word-break: keep-all;
   line-break: strict;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
 }
 .home-cta-title {
-  font-size: 2.0rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
   color: #fff;
   text-align: center;
-  word-break: keep-all;
   line-break: strict;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
 }
 .contact-section p {
   font-size: 1.2rem !important;
@@ -562,34 +561,29 @@ body.sportring-page {
   .hero-copy p, .home-hero p { font-size: 1.2rem !important; white-space: normal; }
   .emotion-feature { flex-direction: column !important; text-align: center; }
   .emotion-text h2 { 
-    font-size: 2.0rem; 
-    word-break: keep-all; 
+    font-size: 1.8rem; 
     line-break: strict;
-    overflow-wrap: anywhere;
+    overflow-wrap: normal;
   }
   .story-quote { 
     font-size: 2.0rem; 
-    word-break: keep-all; 
     line-break: strict;
-    overflow-wrap: anywhere;
+    overflow-wrap: normal;
   }
   .bottom-cta-title { 
     font-size: 2.4rem; 
-    word-break: keep-all; 
     line-break: strict;
-    overflow-wrap: anywhere;
+    overflow-wrap: normal;
   }
   .home-cta-title { 
     font-size: 1.8rem; 
-    word-break: keep-all; 
     line-break: strict;
-    overflow-wrap: anywhere;
+    overflow-wrap: normal;
   }
   .detail-text h2 { 
     font-size: 1.8rem; 
-    word-break: keep-all; 
     line-break: strict;
-    overflow-wrap: anywhere;
+    overflow-wrap: normal;
   }
   .story-container { padding: 60px 20px; border-radius: 40px; }
   .scrolling-track img { height: 250px; }
