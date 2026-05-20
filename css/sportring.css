@@ -331,6 +331,8 @@ body.sportring-page {
   color: #ffffff;
   font-weight: 700;
   line-height: 1.3;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 .detail-text p {
   font-size: 1.2rem;
@@ -487,6 +489,13 @@ body.sportring-page {
 }
 
 /* Contact & Footer */
+.bottom-cta-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
 .contact-section p {
   font-size: 1.2rem !important;
 }
@@ -504,6 +513,12 @@ body.sportring-page {
   .emotion-feature { flex-direction: column !important; text-align: center; }
   .emotion-text h2 { font-size: 2.2rem; }
   .story-quote { font-size: 1.8rem; }
+  .bottom-cta-title { font-size: 2.2rem; }
+  .detail-text h2 { 
+    font-size: 1.8rem; 
+    word-break: keep-all; 
+    overflow-wrap: break-word; 
+  }
   .story-container { padding: 60px 20px; border-radius: 40px; }
   .scrolling-track img { height: 250px; }
   .sportring-page .logo { width: 140px; }
