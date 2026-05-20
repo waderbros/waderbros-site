@@ -186,7 +186,7 @@ p, li {
 
 /* Story Section */
 .story-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 40px auto 0;
   padding: 60px 40px;
   background: linear-gradient(145deg, #111 0%, #000 100%);
@@ -310,7 +310,7 @@ p, li {
 
 /* Detail Page Specifics */
 .content-page {
-  max-width: 800px;
+  max-width: 900px;
   margin: 60px auto;
   padding: 0 20px;
   line-height: 1.8;
@@ -345,7 +345,7 @@ p, li {
 }
 
 .detail-intro {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto 30px;
   text-align: center;
   font-size: 1.2rem;
@@ -461,8 +461,8 @@ p, li {
 /* Summary Box */
 .summary-box {
   background: var(--sr-card-bg);
-  border-radius: 30px;
-  padding: 50px;
+  border-radius: 60px;
+  padding: 60px 40px;
   max-width: 900px;
   margin: 40px auto;
   box-shadow: 0 20px 40px rgba(0,0,0,0.2);
@@ -592,7 +592,7 @@ p, li {
     line-break: strict;
     overflow-wrap: normal;
   }
-  .story-container { padding: 60px 20px; border-radius: 40px; }
+  .story-container, .summary-box { padding: 40px 20px; border-radius: 40px; }
   .scrolling-track img { height: 250px; }
   .sportring-page .logo { width: 140px; }
   .logo-badge { padding: 4px 15px; }
