@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wader Bros. アプリ</title>
 <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/sportring.css">
+<link rel="stylesheet" href="../css/movinrings.css">
 <link rel="icon" href="../assets/favicon.ico">
 <style>
   .screenshot-gallery img {
@@ -26,40 +26,45 @@
     padding: 60px 20px 30px;
     text-align: center;
   }
+  /* Auto Scrolling Gallery */
+  .screenshot-gallery {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background: #1c1c1e;
+    padding: 60px 0;
+  }
 </style>
 </head>
-<body class="sportring-page">
+<body class="movinrings-page">
 <div class="header-content">
   <a href="index.html"><span class="logo-badge"><img class="logo" src="../assets/wader brothers.png?v=20260505" alt="Wader Bros. Logo"></span></a>
 </div>
 
 <main>
-  <!-- SportRing アプリケーションセクション -->
-  <section class="app-section" id="sportring">
+  <!-- MovinRings アプリケーションセクション -->
+  <section class="app-section" id="movinrings">
     <header class="home-hero">
       <div class="reveal active">
-        <span class="app-title">SportRing <span class="free-badge">無料</span></span>
+        <span class="app-title">MovinRings <span class="free-badge">無料</span></span>
         <h1><span class="text-nowrap">お気に入りのワークアウトを、</span><br><span class="text-nowrap">Apple Watchのリングに</span></h1>
       </div>
     </header>
 
-    <!-- ③ スクリーンショットギャラリー (自動スクロール) -->
-    <section class="screenshot-gallery">
-      <div class="scrolling-track">
-        <!-- 1セット目 -->
-        <img src="../sportring/images/sportring-1.png" alt="Watch リング">
-        <img src="../sportring/images/sportring-3.4.png" alt="Watch 設定">
-        <img src="../sportring/images/sportring-3.1.png" alt="Watch コンプリケーション">
-        <img src="../sportring/images/sportring-4.png" alt="iPhone メイン">
-        <img src="../sportring/images/sportring-5.png" alt="iPhone グラフ">
-        <img src="../sportring/images/sportring-5.1.png" alt="iPhone ウィジェット">
-        <!-- 2セット目 (シームレスなループ用) -->
-        <img src="../sportring/images/sportring-1.png" alt="Watch リング">
-        <img src="../sportring/images/sportring-3.4.png" alt="Watch 設定">
-        <img src="../sportring/images/sportring-3.1.png" alt="Watch コンプリケーション">
-        <img src="../sportring/images/sportring-4.png" alt="iPhone メイン">
-        <img src="../sportring/images/sportring-5.png" alt="iPhone グラフ">
-        <img src="../sportring/images/sportring-5.1.png" alt="iPhone ウィジェット">
+    <!-- Watch Animation Section (New) -->
+    <section class="watch-animations reveal active" style="text-align: center; padding: 40px 20px;">
+      <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+        <div class="watch-gif-container">
+          <video autoplay loop muted playsinline style="width: 280px; height: 341px; object-fit: cover; border-radius: 60px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+            <source src="../movinrings/images/mymovie-7-0.6x.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="watch-gif-container">
+          <img src="../movinrings/images/sports-animation.gif" alt="Sports Animation" style="width: 280px; height: 341px; object-fit: cover; border-radius: 60px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+        </div>
+        <div class="watch-gif-container">
+          <img src="../movinrings/images/multi-language.gif" alt="Multi-language Support" style="width: 280px; height: 341px; object-fit: cover; border-radius: 60px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+        </div>
       </div>
     </section>
 
@@ -67,38 +72,38 @@
     <section class="quick-features reveal">
       <div class="q-feature">
         <h3>スポーツ専用リング</h3>
-        <p><span class="nw">ウォーキング</span>、<span class="nw">ランニング</span>、<span class="nw">サイクリング</span>、<span class="nw">スイミング</span>などを美しいリングで可視化。</p>
+        <p><span class="nw">ウォーキング</span>、<span class="nw">ランニング</span>、<span class="nw">サイクリング</span>、<span class="nw">スイミング</span>などを美しいリングで可視化</p>
       </div>
       <div class="q-feature">
         <h3>多彩な<br>コンプリケーション</h3>
-        <p>複数の<span class="nw">コンプリケーション</span>で、文字盤から<span class="nw">進捗</span>をいつでも<span class="nw">確認</span>できます。</p>
+        <p>複数の<span class="nw">コンプリケーション</span>により、文字盤から現在の<span class="nw">進捗</span>をいつでも素早く<span class="nw">確認</span></p>
       </div>
       <div class="q-feature">
         <h3>iOS <span class="nw">ウィジェット</span></h3>
-        <p><span class="nw">ホーム画面</span>やロック画面から、その日の達成状況をひと目で把握。</p>
+        <p>iPhone の<span class="nw">ホーム画面</span>やロック画面から、その日の達成状況をいつでもひと目で把握</p>
       </div>
       <div class="q-feature">
-        <h3>Apple ヘルスケア<br>同期</h3>
-        <p>既存の Apple ヘルスケアデータとシームレスに連携します。</p>
+        <h3>多言語表示対応</h3>
+        <p>デバイスのシステム設定に合わせて、最適な言語を自動的に表示</p>
       </div>
     </section>
 
     <!-- ギャラリー後のナビゲーションとCTA -->
     <div style="text-align: center; padding: 20px 20px 80px;">
       <div style="margin-bottom: 50px;">
-        <a href="../sportring/ja/index.html" class="btn-more">詳細・使い方を見る →</a>
+        <a href="../movinrings/ja/index.html" class="btn-more">詳細・使い方を見る →</a>
       </div>
 
       <h2 class="home-cta-title"><span class="text-nowrap">リングを完成させる準備は</span><span class="text-nowrap">できましたか？</span></h2>
       <p style="color: #a1a1a6; font-size: 1.1rem; margin-bottom: 24px; font-weight: 500;">無料で今すぐ始めましょう</p>
-      <a href="https://apps.apple.com/app/sportring/id6754791208" target="_blank">
+      <a href="https://apps.apple.com/app/movinrings/id6754791208" target="_blank">
         <img src="../assets/Download_on_the_App_Store_Badge_JP_RGB_blk_092917.svg" alt="App Storeからダウンロード" style="height: 60px; filter: brightness(1.2);">
       </a>
     </div>
   </section>
 </main>
 
-<section class="section contact-section" style="padding: 60px 20px; background: #000; border-top: 1px solid #333; margin: 0; max-width: 100%;">
+<section class="section contact-section" style="padding: 60px 20px; background: #1c1c1e; border-top: 1px solid #333; margin: 0; max-width: 100%;">
   <div style="max-width: 600px; margin: 0 auto; text-align: left;">
     <h2 style="font-size: 2.2rem; font-weight: 700; margin-bottom: 10px; color: #fff;">お問い合わせ</h2>
     <p style="color: #86868b; line-height: 1.6; margin-bottom: 20px;">私たちの活動にご関心をお寄せいただき、ありがとうございます。<br>いただいたメールにはすべて目を通し、必要に応じて返信させていただきます。</p>
@@ -106,7 +111,7 @@
   </div>
 </section>
 
-<footer style="background: #000; color: #86868b; padding: 60px 20px; text-align: center; border-top: 1px solid #333;">
+<footer style="background: #1c1c1e; color: #86868b; padding: 60px 20px; text-align: center; border-top: 1px solid #333;">
   <div class="footer-lang">
     © Wader Bros. <span style="color: #444; margin: 0 10px;">|</span> <a href="../index.html" style="color: #86868b; text-decoration: none;">English</a> <span style="color: #444; margin: 0 5px;">/</span> <a href="index.html" style="color: #fff; text-decoration: none;">日本語</a>
   </div>

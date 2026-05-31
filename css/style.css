@@ -123,13 +123,13 @@ html, body {
   color: var(--fg);
 }
 
-.sportring-page .header-nav a {
+.movinrings-page .header-nav a {
   color: #86868b;
 }
-.sportring-page .header-nav span {
+.movinrings-page .header-nav span {
   color: #444;
 }
-.sportring-page .header-nav a.active {
+.movinrings-page .header-nav a.active {
   color: #fff;
 }
 
