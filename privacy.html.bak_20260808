@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Wader Bros.</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/movinrings.css">
+</head>
+<body class="movinrings-page">
+<div class="header-content">
+  <a href="index.html"><span class="logo-badge"><img class="logo" src="assets/wader brothers.png?v=20260505" alt="Wader Bros. Logo"></span></a>
+  <nav class="header-nav">
+    <a href="index.html">Home</a> <span>|</span> 
+    <a href="movinrings/index.html">MovinRings</a> <span>|</span> 
+    <a href="help.html">Help</a> <span>|</span> 
+    <a href="privacy.html" class="active">Privacy</a>
+  </nav>
+</div>
+
+<main class="content-page">
+  <h1>Privacy Policy</h1>
+  
+  <h2>1. Basic Policy</h2>
+  <p>MovinRings (“the App”) is an activity tracking app for Apple Watch and iPhone.<br>
+  We respect your privacy and are committed to handling personal and health-related data safely and responsibly.</p>
+
+  <h2>2. Data Collected</h2>
+  <p>The App uses Apple’s HealthKit framework to access:</p>
+  <ul>
+    <li>Walking and running distance data</li>
+    <li>Activity statistics</li>
+  </ul>
+  <p>This data is used only for displaying your progress as rings and graphs within the app.</p>
+
+  <h2>3. Data Storage and Sharing</h2>
+  <p>All collected data is stored securely on your device.<br>
+  No data is transmitted to, or shared with, any third parties.</p>
+
+  <h2>4. Use of HealthKit</h2>
+  <p>MovinRings integrates with Apple’s HealthKit to read and display activity data.<br>
+  HealthKit data is managed in compliance with Apple’s guidelines and is never used for other purposes without explicit user consent.</p>
+
+  <h2>5. Advertising and Analytics</h2>
+  <p>The App does not currently include ads or third-party analytics tools.<br>
+  If these features are added in the future, users will be informed in advance.</p>
+
+  <h2>6. About Paid Version and Data Handling</h2>
+  <p>The App is currently available for free as a beta version.<br>
+  We may consider a paid version in the future, but this will not affect how your data is handled — your privacy will remain protected.</p>
+</main>
+
+<footer style="background: #1c1c1e; color: #86868b; padding: 60px 20px; border-top: 1px solid #333; text-align: center;">
+  <div class="footer-nav" style="margin-bottom: 24px;">
+    <a href="index.html" style="color: #86868b; text-decoration: none;">Home</a> <span style="color: #444;">|</span> 
+    <a href="movinrings/index.html" style="color: #86868b; text-decoration: none;">MovinRings</a> <span style="color: #444;">|</span> 
+    <a href="help.html" style="color: #86868b; text-decoration: none;">Help</a> <span style="color: #444;">|</span> 
+    <a href="privacy.html" style="color: #fff; text-decoration: none;">Privacy</a>
+  </div>
+  <div class="footer-lang">
+    © Wader Bros. <span style="color: #444; margin: 0 10px;">|</span> <a href="privacy.html" style="color: #fff; text-decoration: none;">English</a> <span style="color: #444; margin: 0 5px;">/</span> <a href="ja/privacy.html" style="color: #86868b; text-decoration: none;">日本語</a>
+  </div>
+</footer>
+</body>
+</html>

@@ -14,7 +14,7 @@
     max-width: none;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(255,255,255,0.05);
-    margin: 0 20px; /* gapの代わり */
+    margin: 0 20px;
   }
   @media (max-width: 768px) {
     .screenshot-gallery img {
@@ -26,13 +26,26 @@
     padding: 60px 20px 30px;
     text-align: center;
   }
-  /* Auto Scrolling Gallery */
   .screenshot-gallery {
     overflow: hidden;
     width: 100%;
     position: relative;
     background: #1c1c1e;
     padding: 60px 0;
+  }
+  /* COMING SOON Badge Style */
+  .coming-soon-badge {
+    display: inline-block;
+    font-size: clamp(0.75rem, 1.2vw, 0.85rem);
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #ff9f0a;
+    background: rgba(255, 159, 10, 0.12);
+    border: 1px solid rgba(255, 159, 10, 0.4);
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 10px;
   }
 </style>
 </head>
@@ -42,16 +55,16 @@
 </div>
 
 <main>
-  <!-- MovinRings Application Section -->
+  <!-- MovinRings Section -->
   <section class="app-section" id="movinrings">
     <header class="home-hero">
       <div class="reveal active">
         <span class="app-title">MovinRings <span class="free-badge">Free</span></span>
-        <h1>Turn your favorite workouts into Apple Watch rings</h1>
+        <h1><span class="responsive-headline" style="font-size: clamp(1.1rem, 3.5vw, 2.2rem); display: inline-block; max-width: 100%; line-height: 1.3;">Your Favorite Workouts on Apple Watch Rings</span></h1>
       </div>
     </header>
 
-    <!-- Watch Animation Section (New) -->
+    <!-- Watch Animation Section -->
     <section class="watch-animations reveal active" style="text-align: center; padding: 40px 20px;">
       <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
         <div class="watch-gif-container">
@@ -68,68 +81,125 @@
       </div>
     </section>
 
-    <!-- ② 3-Second Understanding Section (Quick Features) -->
+    <!-- Quick Features -->
     <section class="quick-features reveal">
       <div class="q-feature">
-        <h3>Sport-specific rings</h3>
-        <p>Visualize Walking, Running, Cycling, Swimming, and more with beautiful rings</p>
+        <h3>Sport-Specific Rings</h3>
+        <p>Visualize <span class="nw">walking</span>, <span class="nw">running</span>, <span class="nw">cycling</span>, <span class="nw">swimming</span> and more with beautiful rings</p>
       </div>
       <div class="q-feature">
-        <h3>Apple Watch complications</h3>
-        <p>Check your progress right on your watch face with multiple rich complication types</p>
+        <h3>Rich Complications</h3>
+        <p>Quickly check your current progress anytime right from your watch face</p>
       </div>
       <div class="q-feature">
-        <h3>iOS widgets</h3>
-        <p>Track your daily achievements from your Home and Lock Screen with iOS widgets</p>
+        <h3>iOS Widgets</h3>
+        <p>Keep track of your daily achievements at a glance from your iPhone Home or Lock Screen</p>
       </div>
       <div class="q-feature">
-        <h3>Multilingual support</h3>
-        <p>The app automatically matches your system settings for a seamless look</p>
+        <h3>Multi-Language Support</h3>
+        <p>Automatically displays the optimal language matching your device settings</p>
       </div>
     </section>
 
-    <!-- Navigation & CTA after Gallery -->
+    <!-- CTA -->
     <div style="text-align: center; padding: 20px 20px 40px;">
       <div style="margin-bottom: 30px;">
-        <a href="movinrings/index.html" class="btn-more">View Details & Manual →</a>
+        <a href="movinrings/index.html" class="btn-more">View Details & Usage →</a>
       </div>
-      
-      <h2 class="home-cta-title">Ready to close your rings?</h2>
-      <p style="color: #a1a1a6; font-size: 1.1rem; margin-bottom: 24px; font-weight: 500;">Get started for free.</p>
+
+      <h2 class="home-cta-title" style="font-size: clamp(1.1rem, 2.5vw, 1.4rem); font-weight: 600; color: #fff; margin-bottom: 12px;">Ready to Close Your Rings?</h2>
+      <p style="color: #a1a1a6; font-size: 1.1rem; margin-bottom: 24px; font-weight: 500;">Get started for free today</p>
       <a href="https://apps.apple.com/app/movinrings/id6754791208" target="_blank">
-        <img src="assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on App Store" style="height: 60px; filter: brightness(1.2);">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" style="height: 60px; filter: brightness(1.2);">
       </a>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <hr style="border: 0; border-top: 2px solid #444c56; margin: 40px 0;">
+
+  <!-- Metronome＆Jam Section -->
+  <section class="app-section" id="metronomeandjam">
+    <header class="home-hero">
+      <div class="reveal active">
+        <div class="coming-soon-badge">COMING SOON</div>
+        <span class="app-title">Metronome＆Jam <span class="free-badge">In-App Purchase</span></span>
+        <h1><span class="responsive-headline" style="font-size: clamp(1.1rem, 3.5vw, 2.2rem); display: inline-block; max-width: 100%; line-height: 1.3;">Feel the Rhythm, Enjoy Playing Music More</span></h1>
+      </div>
+    </header>
+
+    <!-- Video Section -->
+    <section class="watch-animations reveal active" style="text-align: center; padding: 40px 20px;">
+      <div style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap;">
+        <div class="watch-gif-container" style="width: auto; height: auto; background: none; border-radius: 0; box-shadow: none;">
+          <video autoplay loop muted playsinline style="width: 350px; height: 790px; object-fit: cover; border-radius: 56px; border: 7px solid #222; box-shadow: 0 35px 80px rgba(0,0,0,0.9);">
+            <source src="metronomeandjam/images/metronomeandjam-iphone.mp4?v=20260809_05" type="video/mp4">
+          </video>
+        </div>
+        <div class="watch-gif-container">
+          <video autoplay loop muted playsinline style="width: 280px; height: 341px; object-fit: cover; border-radius: 60px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+            <source src="metronomeandjam/images/metronomeandjam-watch.mp4?v=20260809_05" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Features -->
+    <section class="quick-features reveal">
+      <div class="q-feature">
+        <h3>Precise Metronome</h3>
+        <p>Set BPM freely. Support your performance with a steady tempo</p>
+      </div>
+      <div class="q-feature">
+        <h3>Apple Watch Sync</h3>
+        <p>Keep rhythm intuitively with wrist haptic feedback</p>
+      </div>
+      <div class="q-feature">
+        <h3>Jam (Rhythm Loop)</h3>
+        <p>Authentic rhythm performance with 16-step sequencer</p>
+      </div>
+      <div class="q-feature">
+        <h3>My List Presets</h3>
+        <p>Save up to 100 favorite settings and recall instantly</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div style="text-align: center; padding: 20px 20px 40px;">
+      <div style="margin-bottom: 30px;">
+        <a href="metronomeandjam/index.html" class="btn-more">View Details & Usage →</a>
+      </div>
+
+      <h2 class="home-cta-title" style="font-size: clamp(1.1rem, 2.5vw, 1.4rem); font-weight: 600; color: #fff; margin-bottom: 12px;">Ready to Play Music?</h2>
+      <p style="color: #a1a1a6; font-size: 1.1rem; margin-bottom: 24px; font-weight: 500;">COMING SOON</p>
     </div>
   </section>
 </main>
 
-<section class="section contact-section" style="padding: 60px 20px; background: #1c1c1e; border-top: 1px solid #333; margin: 0; max-width: 100%;">
-  <div style="max-width: 600px; margin: 0 auto; text-align: left;">
-    <h2 style="font-size: 2.2rem; font-weight: 700; margin-bottom: 10px; color: #fff;">Contact Us</h2>
-    <p style="color: #86868b; line-height: 1.6; margin-bottom: 20px;">We appreciate your interest in our work. <br>We read every single email and respond when necessary.</p>
-    <span class="email-link" onclick="location.href='mailto:contact@waderbros.com'">contact@waderbros.com</span>
+<footer style="background: #1c1c1e; color: #86868b; padding: 60px 20px; border-top: 1px solid #333; text-align: center;">
+  <div class="footer-nav" style="margin-bottom: 24px;">
+    <a href="index.html" style="color: #fff; text-decoration: none;">Home</a> <span style="color: #444;">|</span> 
+    <a href="movinrings/index.html" style="color: #86868b; text-decoration: none;">MovinRings</a> <span style="color: #444;">|</span> 
+    <a href="metronomeandjam/index.html" style="color: #86868b; text-decoration: none;">Metronome＆Jam</a> <span style="color: #444;">|</span> 
+    <a href="privacy.html" style="color: #86868b; text-decoration: none;">Privacy</a>
   </div>
-</section>
-
-<footer style="background: #1c1c1e; color: #86868b; padding: 60px 20px; text-align: center; border-top: 1px solid #333;">
   <div class="footer-lang">
     © Wader Bros. <span style="color: #444; margin: 0 10px;">|</span> <a href="index.html" style="color: #fff; text-decoration: none;">English</a> <span style="color: #444; margin: 0 5px;">/</span> <a href="ja/index.html" style="color: #86868b; text-decoration: none;">日本語</a>
   </div>
 </footer>
 
 <script>
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      if (elementTop < windowHeight - 150) {
-        reveals[i].classList.add("active");
+document.addEventListener('DOMContentLoaded', function() {
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
       }
-    }
-  }
-  window.addEventListener("scroll", reveal);
-  reveal();
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(reveal => observer.observe(reveal));
+});
 </script>
 </body>
 </html>

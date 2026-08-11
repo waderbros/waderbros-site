@@ -1,10 +1,31 @@
 /* MovinRings Specific Styles - Apple-like Dark Theme */
 :root {
-  --sr-bg: #1c1c1e; /* Changed to a lighter dark grey */
+  --sr-bg: #1c1c1e;
   --sr-fg: #ffffff;
   --sr-muted: #86868b;
   --sr-accent: #007aff;
-  --sr-card-bg: #2c2c2e; /* Slightly lighter card bg for contrast */
+  --sr-card-bg: #2c2c2e;
+}
+
+html {
+  background-color: #1c1c1e;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #1c1c1e;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 body.movinrings-page {
@@ -15,6 +36,9 @@ body.movinrings-page {
   word-break: auto-phrase; /* 最新ブラウザ向け: 日本語の自然な文節改行 */
   overflow-wrap: break-word; 
   line-break: strict; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 p, li {

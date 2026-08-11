@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metronome＆Jam | Wader Bros.</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/movinrings.css">
+<style>
+/* COMING SOON Badge Style */
+.coming-soon-badge {
+  display: inline-block;
+  font-size: clamp(0.75rem, 1.2vw, 0.85rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ff9f0a;
+  background: rgba(255, 159, 10, 0.12);
+  border: 1px solid rgba(255, 159, 10, 0.4);
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+/* MovinRings 本物と 100% 完全同一のフォントサイズ＆レスポンシブ設定 */
+.detail-text h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem) !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin-bottom: 24px !important;
+  line-height: 1.3 !important;
+}
+.detail-text p, .detail-text ul {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem) !important;
+  line-height: 1.85 !important;
+  color: #d2d2d7 !important;
+  text-align: left !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+}
+
+/* iPhone画面画像（MovinRings標準高さ 520px） */
+.phone-img {
+  height: 520px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  border-radius: 24px !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5) !important;
+  display: block;
+}
+
+/* サブ画像3段縦並び (等倍1.0倍標準表示) */
+.metronome-sub-column {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 520px !important;
+  width: 220px !important;
+  flex-shrink: 0 !important;
+}
+
+/* サブ画像等倍カード */
+.sub-card-box {
+  height: 160px !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-radius: 14px !important;
+  box-sizing: border-box !important;
+}
+
+.sub-card-box img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.5) !important;
+  display: block !important;
+}
+
+/* Apple Watch画面 */
+.watch-pair-grid {
+  display: flex !important;
+  gap: 16px !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.watch-pair-grid img {
+  width: 200px !important;
+  max-width: 48% !important;
+  height: auto !important;
+  border-radius: 32px !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5) !important;
+}
+
+.app-store-btn {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.app-store-btn:hover {
+  transform: scale(1.05);
+}
+
+/* MovinRings と完全同期するレスポンシブブレイクポイント */
+@media (max-width: 1024px) {
+  .phone-img {
+    height: 440px !important;
+  }
+  .metronome-sub-column {
+    height: 440px !important;
+    width: 180px !important;
+  }
+  .sub-card-box {
+    height: 136px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-feature-content {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+  .detail-text p, .detail-text ul {
+    text-align: left !important;
+  }
+  .detail-images {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .phone-img {
+    height: 380px !important;
+  }
+  .metronome-sub-column {
+    flex-direction: row !important;
+    height: auto !important;
+    width: 100% !important;
+    gap: 8px !important;
+    margin-top: 16px !important;
+  }
+  .sub-card-box {
+    height: 110px !important;
+    width: 33.33% !important;
+  }
+}
+</style>
+</head>
+<body class="movinrings-page">
+
+<div class="header-content">
+  <a href="../index.html"><span class="logo-badge"><img class="logo" src="../assets/wader brothers.png?v=20260505" alt="Wader Bros. Logo"></span></a>
+  <nav class="header-nav">
+    <a href="../index.html">Home</a> <span>|</span> 
+    <a href="index.html" class="active">Metronome＆Jam</a> <span>|</span> 
+    <a href="help.html">Help</a> <span>|</span> 
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</div>
+
+<main>
+  <div style="text-align: center; padding: 40px 20px 20px;">
+    <div class="coming-soon-badge">COMING SOON</div>
+    <span class="app-title" style="margin-bottom: 0; display: block;">METRONOME＆JAM <span class="free-badge">In-App Purchase</span></span>
+  </div>
+
+  <!-- Section 1: Metronome Mode -->
+  <section class="detail-feature reveal active" style="border-top: none;">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>Metronome Mode</h2>
+        <p>The core feature for playing click sounds in sync with your tempo. Adjust BPM by dragging the number left/right or tapping the +/− buttons. Tap continuously to automatically measure BPM from your tap intervals. Change time signatures, sound kits, and rhythm patterns (eighth notes, triplets, shuffle, etc.) with dedicated buttons. Tap the beat pad (PAD) to toggle accent or mute for each beat. Adjust overall volume with the volume slider, and set a practice timer to automatically stop after your target duration.</p>
+      </div>
+      <div class="detail-images">
+        <img src="images/M&j1.png" alt="Metronome Mode" class="phone-img">
+        
+        <div class="metronome-sub-column">
+          <div class="sub-card-box">
+            <img src="images/M&j12-拍子.png" alt="Time Signature">
+          </div>
+          <div class="sub-card-box">
+            <img src="images/M&j13-Sound.png" alt="Sound Kits">
+          </div>
+          <div class="sub-card-box">
+            <img src="images/M&j14-音符.png" alt="Rhythm Patterns">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Jam (Rhythm Loop) Mode -->
+  <section class="detail-feature reveal active">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>Jam (Rhythm Loop) Mode</h2>
+        <p>A drum loop feature featuring 3 parts: hi-hat, snare, and kick. Tap the preset name at the top (Rock, Funk, Shuffle, etc.) to select a genre, or assemble your own custom beat pattern with the 16-step sequencer. Tap each step to cycle volume through 4 levels: OFF → Ghost → Normal → Accent. Adjust individual part volume balance and swing (groove feeling) with sliders, with BPM configurable independently from the metronome.</p>
+      </div>
+      <div class="detail-images">
+        <img src="images/M&j2.png" alt="Jam Mode" class="phone-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: My List (Preset Storage) -->
+  <section class="detail-feature reveal active">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>My List (Preset Storage)</h2>
+        <p>Save up to 100 of your favorite metronome and jam configurations with custom names. Simply tap a saved preset to instantly recall all settings—including BPM, time signature, sound kit, and drum patterns—and automatically switch to the corresponding tab. Reorder, rename, or delete presets seamlessly from the "Edit" button.</p>
+      </div>
+      <div class="detail-images">
+        <img src="images/M&j3.png" alt="My List Feature" class="phone-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Apple Watch Support -->
+  <section class="detail-feature reveal active">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>Apple Watch Support</h2>
+        <ul class="detail-list">
+          <li>Play/Stop, change BPM, and switch time signatures or sound kits directly from Apple Watch</li>
+          <li>Haptic vibration feedback enables silent tapping in rhythm with the tempo</li>
+          <li>Keep precise rhythm through wrist vibrations even in quiet environments</li>
+        </ul>
+      </div>
+      <div class="detail-images watch-grid">
+        <img src="images/M&j7.png" alt="Apple Watch 1">
+        <img src="images/M&j8.png" alt="Apple Watch 2">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Customization -->
+  <section class="detail-feature reveal active">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>Customization</h2>
+        <p>Customize the app's overall appearance and behavior. Choose your preferred appearance mode (Light, Dark, or System), select from 7 color themes, and toggle iPhone vibration, screen flash, or Apple Watch vibration ON/OFF. When using Bluetooth earphones, fine-tune audio and haptic synchronization with the latency compensation slider (0–500ms). Check your premium status or upgrade directly from this screen.</p>
+      </div>
+      <div class="detail-images">
+        <img src="images/M&j4.png" alt="Customization" class="phone-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: iPad Split View Support -->
+  <section class="detail-feature reveal active">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>iPad Split View Support</h2>
+        <p>Freely adjust the app size to use it as a convenient mini player alongside sheet music or other music apps.</p>
+      </div>
+      <div class="detail-images">
+        <img src="images/M&j6.png" alt="iPad Split View Support" class="ipad-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Pro Version (One-Time Purchase) -->
+  <section class="detail-feature reveal active">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>Pro Version (One-Time Purchase)</h2>
+        <p>Upgrade to Pro to unlock all premium features, including all sound kits, subdivided rhythms, preset storage, and Apple Watch integration. A single one-time purchase grants lifetime access.</p>
+      </div>
+      <div class="detail-images">
+        <img src="images/M&j9.png" alt="Pro Version (One-Time Purchase)" class="phone-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="home-cta" style="padding: 80px 20px; text-align: center;">
+    <h2 class="home-cta-title" style="font-size: clamp(1.4rem, 3.5vw, 2.2rem); margin-bottom: 24px; color: #fff;">Ready to play?</h2>
+    <p style="color: #a1a1a6; font-size: 1.1rem; margin-bottom: 24px; font-weight: 500;">COMING SOON</p>
+  </section>
+</main>
+
+<footer style="background: #1c1c1e; color: #86868b; padding: 60px 20px; border-top: 1px solid #333; text-align: center;">
+  <div class="footer-nav" style="margin-bottom: 24px;">
+    <a href="../index.html" style="color: #86868b; text-decoration: none;">Home</a> <span style="color: #444;">|</span> 
+    <a href="index.html" style="color: #86868b; text-decoration: none;">Metronome＆Jam</a> <span style="color: #444;">|</span> 
+    <a href="help.html" style="color: #fff; text-decoration: none;">Help</a> <span style="color: #444;">|</span> 
+    <a href="privacy.html" style="color: #86868b; text-decoration: none;">Privacy</a>
+  </div>
+  <div class="footer-lang">
+    © Wader Bros. <span style="color: #444; margin: 0 10px;">|</span> <a href="help.html" style="color: #fff; text-decoration: none;">English</a> <span style="color: #444; margin: 0 5px;">/</span> <a href="ja/index.html" style="color: #86868b; text-decoration: none;">日本語</a>
+  </div>
+</footer>
+</body>
+</html>

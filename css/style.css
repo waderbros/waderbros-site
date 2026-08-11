@@ -7,14 +7,26 @@
 }
 * { box-sizing: border-box; }
 img { max-width: 100%; height: auto; }
-html, body {
+html {
+  background-color: #1c1c1e;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
   background: var(--bg);
   color: var(--fg);
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, sans-serif;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+main {
+  flex: 1 0 auto;
 }
 /* Header */
 .header-content {
