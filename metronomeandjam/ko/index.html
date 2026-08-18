@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metronome＆Jam | Wader Bros.</title>
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/movinrings.css">
+<style>
+.coming-soon-badge {
+  display: inline-block;
+  font-size: clamp(0.75rem, 1.2vw, 0.85rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ff9f0a;
+  background: rgba(255, 159, 10, 0.12);
+  border: 1px solid rgba(255, 159, 10, 0.4);
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+.detail-text h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem) !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin-bottom: 24px !important;
+  line-height: 1.3 !important;
+}
+.detail-text p, .detail-text ul {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem) !important;
+  line-height: 1.85 !important;
+  color: #d2d2d7 !important;
+  text-align: left !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  line-break: strict !important;
+}
+.phone-img {
+  height: 520px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  border-radius: 24px !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5) !important;
+  display: block;
+}
+.metronome-sub-column {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 520px !important;
+  width: 220px !important;
+  flex-shrink: 0 !important;
+}
+.sub-card-box {
+  height: 160px !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-radius: 14px !important;
+  box-sizing: border-box !important;
+}
+.sub-card-box img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.5) !important;
+  display: block !important;
+}
+.watch-pair-grid {
+  display: flex !important;
+  gap: 16px !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.watch-pair-grid img {
+  width: 200px !important;
+  max-width: 48% !important;
+  height: auto !important;
+  border-radius: 32px !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5) !important;
+}
+@media (max-width: 1024px) {
+  .phone-img { height: 440px !important; }
+  .metronome-sub-column { height: 440px !important; width: 180px !important; }
+  .sub-card-box { height: 136px !important; }
+}
+@media (max-width: 768px) {
+  .detail-feature-content { flex-direction: column !important; text-align: center !important; }
+  .detail-text p, .detail-text ul { text-align: left !important; }
+  .detail-images { flex-direction: column !important; align-items: center !important; width: 100% !important; }
+  .phone-img { height: 380px !important; }
+  .metronome-sub-column { flex-direction: row !important; height: auto !important; width: 100% !important; gap: 8px !important; margin-top: 16px !important; }
+  .sub-card-box { height: 110px !important; width: 33.33% !important; }
+}
+</style>
+</head>
+<body class="movinrings-page">
+
+<div class="header-content">
+  <a href="../../ko/index.html"><span class="logo-badge"><img class="logo" src="../../assets/wader brothers.png?v=20260505" alt="Wader Bros. Logo"></span></a>
+  <nav class="header-nav">
+    <a href="../../ko/index.html">홈</a> <span>|</span> 
+    <a href="index.html" class="active">Metronome＆Jam</a> <span>|</span> 
+    <a href="help.html">도움말</a> <span>|</span> 
+    <a href="privacy.html">개인정보 처리방침</a>
+  </nav>
+</div>
+
+<main>
+  <div style="text-align: center; padding: 40px 20px 20px;">
+    <div class="coming-soon-badge">출시 예정</div>
+    <span class="app-title" style="margin-bottom: 0; display: block;">METRONOME＆JAM <span class="free-badge">앱 내 구입</span></span>
+  </div>
+
+  <section class="detail-feature reveal active" style="border-top: none;">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>메트로놈 모드</h2>
+        <p>템포에 맞춰 클릭음을 재생하는 핵심 기능입니다. 숫자를 좌우로 드래그하거나 +/− 버튼을 눌러 BPM을 조절하세요. 연속으로 탭하면 탭 간격으로부터 BPM을 자동으로 측정합니다. 전용 버튼으로 박자, 사운드 키트, 리듬 패턴을 조절할 수 있습니다. 볼륨 슬라이더로 전체 음량을 조절하고 연습 타이머를 설정하세요.</p>
+      </div>
+      <div class="detail-images">
+        <img src="../images/M&j1.png" alt="메트로놈 모드" class="phone-img">
+        <div class="metronome-sub-column">
+          <div class="sub-card-box"><img src="../images/M&j12-拍子.png" alt="박자 설정"></div>
+          <div class="sub-card-box"><img src="../images/M&j13-Sound.png" alt="사운드 키트"></div>
+          <div class="sub-card-box"><img src="../images/M&j14-音符.png" alt="리듬 패턴"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-feature reveal active">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>Jam (리듬 루프) 모드</h2>
+        <p>하이햇, 스네어, 킥의 3개 파트로 구성된 드럼 루프 기능입니다. 상단의 프리셋 이름을 눌러 장르를 선택하거나 16스텝 시퀀서로 자신만의 비트 패턴을 만드세요. 슬라이더로 음량 밸런스와 스윙감을 조절할 수 있습니다.</p>
+      </div>
+      <div class="detail-images">
+        <img src="../images/M&j2.png" alt="Jam 모드" class="phone-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-feature reveal active">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>내 리스트 (프리셋 저장)</h2>
+        <p>선호하는 메트로놈 및 잼 설정을 이름을 지정하여 최대 100개까지 저장할 수 있는 기능입니다. 저장된 프리셋을 누르기만 하면 모든 설정이 즉시 불러와집니다.</p>
+      </div>
+      <div class="detail-images">
+        <img src="../images/M&j3.png" alt="내 리스트" class="phone-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-feature reveal active">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>Apple Watch 지원</h2>
+        <ul class="detail-list">
+          <li>Apple Watch에서 재생/정지, BPM 변경 및 설정을 직접 제어</li>
+          <li>햅틱 진동 피드백으로 무음 상태에서도 리듬 유지 가능</li>
+          <li>손목의 진동을 통해 정교한 리듬을 유지하세요</li>
+        </ul>
+      </div>
+      <div class="detail-images watch-pair-grid">
+        <img src="../images/M&j7.png" alt="Apple Watch 1">
+        <img src="../images/M&j8.png" alt="Apple Watch 2">
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-feature reveal active">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>사용자화 (커스터마이징)</h2>
+        <p>앱의 전반적인 모양과 동작을 맞춤 설정하세요. 테마 색상을 선택하고 iPhone 진동, 화면 플래시 또는 Apple Watch 진동 켜기/끄기를 전환할 수 있습니다.</p>
+      </div>
+      <div class="detail-images">
+        <img src="../images/M&j4.png" alt="사용자화" class="phone-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-feature reveal active">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>iPad Split View 지원</h2>
+        <p>앱 크기를 자유롭게 변경하여 악보나 다른 음악 앱과 함께 편리한 미니 플레이어로 사용할 수 있습니다.</p>
+      </div>
+      <div class="detail-images">
+        <img src="../images/M&j6.png" alt="iPad Split View 지원" style="max-width: 540px; width: 100%; height: auto; border-radius: 24px; box-shadow: 0 15px 40px rgba(0,0,0,0.6);">
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-feature reveal active">
+    <div class="detail-feature-content">
+      <div class="detail-text">
+        <h2>Pro 버전 (일회성 구매)</h2>
+        <p>Pro로 업그레이드하여 모든 사운드 키트, 세분화된 리듬, 프리셋 저장 및 Apple Watch 연동을 포함한 모든 프리미엄 기능을 잠금 해제하세요. 단 한 번의 일회성 구매로 평생 이용이 가능합니다.</p>
+      </div>
+      <div class="detail-images">
+        <img src="../images/M&j9.png" alt="Pro 버전" class="phone-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="home-cta" style="padding: 80px 20px; text-align: center;">
+    <h2 class="home-cta-title" style="font-size: clamp(1.4rem, 3.5vw, 2.2rem); margin-bottom: 24px; color: #fff;">음악을 연주할 준비가 되셨나요?</h2>
+    <p style="color: #a1a1a6; font-size: 1.1rem; margin-bottom: 24px; font-weight: 500;">출시 예정</p>
+  </section>
+</main>
+
+<footer style="background: #1c1c1e; color: #86868b; padding: 60px 20px; border-top: 1px solid #333; text-align: center;">
+  <div class="footer-nav" style="margin-bottom: 24px;">
+    <a href="../../ko/index.html" style="color: #86868b; text-decoration: none;">홈</a> <span style="color: #444;">|</span> 
+    <a href="index.html" style="color: #fff; text-decoration: none;">Metronome＆Jam</a> <span style="color: #444;">|</span> 
+    <a href="help.html" style="color: #86868b; text-decoration: none;">도움말</a> <span style="color: #444;">|</span> 
+    <a href="privacy.html" style="color: #86868b; text-decoration: none;">개인정보 처리방침</a>
+  </div>
+  <div class="footer-lang-list">
+    <span style="color: #86868b; margin-right: 4px;">© Wader Bros.</span>
+    <span class="divider">|</span>
+    <a href="../index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">English</a>
+    <span class="divider">|</span>
+    <a href="../de/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">Deutsch</a>
+    <span class="divider">|</span>
+    <a href="../fr/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">Français</a>
+    <span class="divider">|</span>
+    <a href="../es/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">Español</a>
+    <span class="divider">|</span>
+    <a href="../nl/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">Nederlands</a>
+    <span class="divider">|</span>
+    <a href="../ja/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">日本語</a>
+    <span class="divider">|</span>
+    <a href="index.html" class="active" onclick="sessionStorage.setItem('has_lang_selected', 'true');">한국어</a>
+    <span class="divider">|</span>
+    <a href="../zh-hans/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">简体中文</a>
+    <span class="divider">|</span>
+    <a href="../zh-hant/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">繁體中文</a>
+    <span class="divider">|</span>
+    <a href="../th/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">ไทย</a>
+  </div>
+</footer>
+</body>
+</html>

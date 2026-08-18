@@ -402,3 +402,44 @@ footer a:hover { text-decoration: underline; }
   margin-top: 12px;
   font-size: 0.8rem;
 }
+
+/* Responsive Footer Multi-Language Link List */
+.footer-lang-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px 8px;
+  max-width: 1200px;
+  margin: 16px auto 0;
+  font-size: 1.0rem;
+  line-height: 1.6;
+}
+@media (min-width: 768px) {
+  .footer-lang-list {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 0 4px;
+    font-size: 1.0rem;
+  }
+}
+.footer-lang-list a {
+  color: #86868b;
+  text-decoration: none;
+  padding: 2px 4px;
+  border-radius: 6px;
+  transition: color 0.2s, background-color 0.2s;
+}
+.footer-lang-list a:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-lang-list a.active {
+  color: #ffffff;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+.footer-lang-list .divider {
+  color: #444446;
+  user-select: none;
+}

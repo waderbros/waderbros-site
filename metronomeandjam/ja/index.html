@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="../../css/style.css">
 <link rel="stylesheet" href="../../css/movinrings.css">
 <style>
-/* COMING SOON バッジスタイル */
 .coming-soon-badge {
   display: inline-block;
   font-size: clamp(0.75rem, 1.2vw, 0.85rem);
@@ -21,8 +20,6 @@
   border-radius: 20px;
   margin-bottom: 8px;
 }
-
-/* MovinRings 本物と 100% 完全同一のフォントサイズ＆レスポンシブ設定 */
 .detail-text h2 {
   font-size: clamp(1.8rem, 3.5vw, 2.4rem) !important;
   font-weight: 700 !important;
@@ -39,8 +36,6 @@
   overflow-wrap: break-word !important;
   line-break: strict !important;
 }
-
-/* iPhone画面画像（MovinRings標準高さ 520px） */
 .phone-img {
   height: 520px !important;
   width: auto !important;
@@ -49,8 +44,6 @@
   box-shadow: 0 15px 40px rgba(0,0,0,0.5) !important;
   display: block;
 }
-
-/* サブ画像3段縦並び (等倍1.0倍標準表示) */
 .metronome-sub-column {
   display: flex !important;
   flex-direction: column !important;
@@ -59,8 +52,6 @@
   width: 220px !important;
   flex-shrink: 0 !important;
 }
-
-/* サブ画像等倍カード */
 .sub-card-box {
   height: 160px !important;
   width: 100% !important;
@@ -71,7 +62,6 @@
   border-radius: 14px !important;
   box-sizing: border-box !important;
 }
-
 .sub-card-box img {
   max-width: 100% !important;
   max-height: 100% !important;
@@ -82,8 +72,6 @@
   box-shadow: 0 4px 14px rgba(0,0,0,0.5) !important;
   display: block !important;
 }
-
-/* Apple Watch画面 */
 .watch-pair-grid {
   display: flex !important;
   gap: 16px !important;
@@ -97,56 +85,18 @@
   border-radius: 32px !important;
   box-shadow: 0 15px 40px rgba(0,0,0,0.5) !important;
 }
-
-.app-store-btn {
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
-.app-store-btn:hover {
-  transform: scale(1.05);
-}
-
-/* MovinRings と完全同期するレスポンシブブレイクポイント */
 @media (max-width: 1024px) {
-  .phone-img {
-    height: 440px !important;
-  }
-  .metronome-sub-column {
-    height: 440px !important;
-    width: 180px !important;
-  }
-  .sub-card-box {
-    height: 136px !important;
-  }
+  .phone-img { height: 440px !important; }
+  .metronome-sub-column { height: 440px !important; width: 180px !important; }
+  .sub-card-box { height: 136px !important; }
 }
-
 @media (max-width: 768px) {
-  .detail-feature-content {
-    flex-direction: column !important;
-    text-align: center !important;
-  }
-  .detail-text p, .detail-text ul {
-    text-align: left !important;
-  }
-  .detail-images {
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-  }
-  .phone-img {
-    height: 380px !important;
-  }
-  .metronome-sub-column {
-    flex-direction: row !important;
-    height: auto !important;
-    width: 100% !important;
-    gap: 8px !important;
-    margin-top: 16px !important;
-  }
-  .sub-card-box {
-    height: 110px !important;
-    width: 33.33% !important;
-  }
+  .detail-feature-content { flex-direction: column !important; text-align: center !important; }
+  .detail-text p, .detail-text ul { text-align: left !important; }
+  .detail-images { flex-direction: column !important; align-items: center !important; width: 100% !important; }
+  .phone-img { height: 380px !important; }
+  .metronome-sub-column { flex-direction: row !important; height: auto !important; width: 100% !important; gap: 8px !important; margin-top: 16px !important; }
+  .sub-card-box { height: 110px !important; width: 33.33% !important; }
 }
 </style>
 </head>
@@ -164,41 +114,32 @@
 
 <main>
   <div style="text-align: center; padding: 40px 20px 20px;">
-    <div class="coming-soon-badge">COMING SOON</div>
-    <span class="app-title" style="margin-bottom: 0; display: block;">METRONOME＆JAM <span class="free-badge">アプリ内課金</span></span>
+    <div class="coming-soon-badge">近日公開</div>
+    <span class="app-title" style="margin-bottom: 0; display: block;">METRONOME＆JAM <span class="free-badge">App内課金あり</span></span>
   </div>
 
-  <!-- セクション1: メトロノームモード -->
   <section class="detail-feature reveal active" style="border-top: none;">
     <div class="detail-feature-content">
       <div class="detail-text">
         <h2>メトロノームモード</h2>
-        <p>テンポに合わせてクリック音を鳴らす基本機能です。BPM（テンポ）は数値の左右ドラッグまたは＋/−ボタンで調整できます。TAPボタンを連続タップすると、タップ間隔からBPMを自動測定します。拍子・音色・リズムパターン（8分音符、3連符、シャッフルなど）はそれぞれのボタンから変更可能。ビートパッド（PAD）をタップすると、拍ごとにアクセント・ミュートを切り替えられます。音量スライダーで全体の音量を調整し、練習タイマーを設定すれば指定時間で自動停止します。</p>
+        <p>テンポに合わせてクリック音を再生する基本機能です。数字の左右ドラッグや＋/−ボタンでBPMを調整。連続タップでタップ間隔からBPMを自動計測。専用ボタンで拍子、サウンドキット、リズムパターン（8分、3連、シャッフル等）を変更可能です。ビートパッド（PAD）タップで各拍のアクセント・消音を切り替え。音量スライダーで全体音量を調整し、練習タイマーで指定時間後の自動停止も設定できます。</p>
       </div>
       <div class="detail-images">
         <img src="../images/M&j1.png" alt="メトロノームモード" class="phone-img">
-        
         <div class="metronome-sub-column">
-          <div class="sub-card-box">
-            <img src="../images/M&j12-拍子.png" alt="拍子設定">
-          </div>
-          <div class="sub-card-box">
-            <img src="../images/M&j13-Sound.png" alt="音色選択">
-          </div>
-          <div class="sub-card-box">
-            <img src="../images/M&j14-音符.png" alt="リズムパターン">
-          </div>
+          <div class="sub-card-box"><img src="../images/M&j12-拍子.png" alt="拍子設定"></div>
+          <div class="sub-card-box"><img src="../images/M&j13-Sound.png" alt="サウンド選択"></div>
+          <div class="sub-card-box"><img src="../images/M&j14-音符.png" alt="リズムパターン"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- セクション2: Jam（リズムループ）モード -->
   <section class="detail-feature reveal active">
     <div class="detail-feature-content">
       <div class="detail-text">
         <h2>Jam（リズムループ）モード</h2>
-        <p>ハイハット・スネア・キックの3パートで構成されるドラムループ機能です。画面上部のプリセット名（Rock、Funk、Shuffleなど）をタップしてジャンルを選択するか、16ステップのシーケンサーで自分だけのビートパターンを組み立てられます。各ステップをタップするとOFF→ゴースト→ノーマル→アクセントの4段階で音量が切り替わります。パートごとの音量バランスとスウィング（ハネ具合）をスライダーで調整でき、BPMはメトロノームとは独立して設定可能です。</p>
+        <p>ハイハット、スネア、バスドラムの3パートで構成されるドラムループ機能です。上部のプリセット名をタップしてジャンルを選択、または16ステップシーケンサーで自分だけのビートパターンを作成。スライダーで音量バランスやSwing（跳ね感）を調節可能です。</p>
       </div>
       <div class="detail-images">
         <img src="../images/M&j2.png" alt="Jamモード" class="phone-img">
@@ -206,28 +147,26 @@
     </div>
   </section>
 
-  <!-- セクション3: マイリスト（プリセット保存） -->
   <section class="detail-feature reveal active">
     <div class="detail-feature-content">
       <div class="detail-text">
         <h2>マイリスト（プリセット保存）</h2>
-        <p>お気に入りのメトロノーム設定やジャム設定を、名前を付けて最大100件まで保存できる機能です。保存したプリセットをタップするだけで、BPM・拍子・音色・ドラムパターンなどの設定が一括で呼び出され、対応するタブに自動で切り替わります。「編集」ボタンからプリセットの並び替え・名前変更・削除が行えます。</p>
+        <p>お気に入りのメトロノーム・Jam設定を名前をつけて最大100個まで保存できる機能です。保存したプリセットをタップするだけで、すべての設定を瞬時に呼び出せます。</p>
       </div>
       <div class="detail-images">
-        <img src="../images/M&j3.png" alt="マイリスト機能" class="phone-img">
+        <img src="../images/M&j3.png" alt="マイリスト" class="phone-img">
       </div>
     </div>
   </section>
 
-  <!-- セクション4: Apple Watch対応 -->
   <section class="detail-feature reveal active">
     <div class="detail-feature-content">
       <div class="detail-text">
-        <h2>Apple Watch対応</h2>
+        <h2>Apple Watch 対応</h2>
         <ul class="detail-list">
-          <li>Apple Watchから再生/停止、BPM変更、拍子・音色の切替が可能</li>
-          <li>ハプティクス（振動）機能でリズムに合わせた無音タップが可能</li>
-          <li>音を出せなくても、手首の振動でリズムキープ</li>
+          <li>Apple Watch側からの再生・停止、BPM変更、各種設定の切り替えに対応</li>
+          <li>触覚（バイブレーション）通知で、音を出さずにリズムをキープ可能</li>
+          <li>手首への振動により、正確なリズムをキープできます</li>
         </ul>
       </div>
       <div class="detail-images watch-pair-grid">
@@ -237,12 +176,11 @@
     </div>
   </section>
 
-  <!-- セクション5: カスタマイズ -->
   <section class="detail-feature reveal active">
     <div class="detail-feature-content">
       <div class="detail-text">
         <h2>カスタマイズ</h2>
-        <p>アプリ全体の表示や動作をカスタマイズできます。外観モード（ライト/ダーク/システム連動）、カラーテーマ（7色）の変更に加え、iPhone振動・画面フラッシュ・Apple Watch振動のON/OFFを切り替えられます。Bluetoothイヤホン使用時は遅延補正スライダー（0〜500ms）で音と振動のズレを微調整できます。プレミアム版のステータス確認やアップグレードもこの画面から行えます。</p>
+        <p>アプリ全体の外観や動作を自分好みに設定。外観モードやカラーテーマを選択でき、iPhoneのバイブレーション、画面フラッシュ、Apple WatchのバイブレーションのON/OFFを切り替えられます。</p>
       </div>
       <div class="detail-images">
         <img src="../images/M&j4.png" alt="カスタマイズ" class="phone-img">
@@ -250,36 +188,33 @@
     </div>
   </section>
 
-  <!-- セクション6: iPadスプリットビュー対応 -->
   <section class="detail-feature reveal active">
     <div class="detail-feature-content">
       <div class="detail-text">
-        <h2>iPadのスプリットビューに対応</h2>
-        <p>アプリのサイズを自由に変更し、ミニプレイヤーとして譜面や音楽アプリと共に使用できます。</p>
+        <h2>iPad Split View 対応</h2>
+        <p>アプリのサイズを自由に調整でき、楽譜や他の音楽アプリと一緒に使える便利なミニプレイヤーとしても活用できます。</p>
       </div>
       <div class="detail-images">
-        <img src="../images/M&j6.png" alt="iPadスプリットビュー対応" style="max-width: 540px; width: 100%; height: auto; border-radius: 24px; box-shadow: 0 15px 40px rgba(0,0,0,0.6);">
+        <img src="../images/M&j6.png" alt="iPad Split View 対応" style="max-width: 540px; width: 100%; height: auto; border-radius: 24px; box-shadow: 0 15px 40px rgba(0,0,0,0.6);">
       </div>
     </div>
   </section>
 
-  <!-- セクション7: プロ版（買い切り） -->
   <section class="detail-feature reveal active">
     <div class="detail-feature-content">
       <div class="detail-text">
-        <h2>プロ版（買い切り）</h2>
-        <p>プロ版へのアップグレードですべてのサウンドキット、細分化リズム、プリセット保存、Apple Watch連携などのプレミアム機能がすべてアンロックされます。一度の購入で永久にご利用いただけます。</p>
+        <h2>Proバージョン（一括買い切り）</h2>
+        <p>Proにアップグレードすることで、すべてのサウンドキット、細分化リズム、プリセット保存、Apple Watch連携を含むすべてのプレミアム機能が解放されます。一度の買い切りで無制限にご利用いただけます。</p>
       </div>
       <div class="detail-images">
-        <img src="../images/M&j9.png" alt="プロ版（買い切り）" class="phone-img">
+        <img src="../images/M&j9.png" alt="Proバージョン" class="phone-img">
       </div>
     </div>
   </section>
 
-  <!-- ボトムCTA -->
   <section class="home-cta" style="padding: 80px 20px; text-align: center;">
     <h2 class="home-cta-title" style="font-size: clamp(1.4rem, 3.5vw, 2.2rem); margin-bottom: 24px; color: #fff;">演奏がしたくなってきましたか？</h2>
-    <p style="color: #a1a1a6; font-size: 1.1rem; margin-bottom: 24px; font-weight: 500;">COMING SOON</p>
+    <p style="color: #a1a1a6; font-size: 1.1rem; margin-bottom: 24px; font-weight: 500;">近日公開</p>
   </section>
 </main>
 
@@ -290,23 +225,29 @@
     <a href="help.html" style="color: #86868b; text-decoration: none;">ヘルプ</a> <span style="color: #444;">|</span> 
     <a href="privacy.html" style="color: #86868b; text-decoration: none;">プライバシー</a>
   </div>
-  <div class="footer-lang">
-    © Wader Bros. <span style="color: #444; margin: 0 10px;">|</span> <a href="../index.html" style="color: #86868b; text-decoration: none;">English</a> <span style="color: #444; margin: 0 5px;">/</span> <a href="index.html" style="color: #fff; text-decoration: none;">日本語</a>
+  <div class="footer-lang-list">
+    <span style="color: #86868b; margin-right: 4px;">© Wader Bros.</span>
+    <span class="divider">|</span>
+    <a href="../index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">English</a>
+    <span class="divider">|</span>
+    <a href="../de/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">Deutsch</a>
+    <span class="divider">|</span>
+    <a href="../fr/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">Français</a>
+    <span class="divider">|</span>
+    <a href="../es/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">Español</a>
+    <span class="divider">|</span>
+    <a href="../nl/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">Nederlands</a>
+    <span class="divider">|</span>
+    <a href="index.html" class="active" onclick="sessionStorage.setItem('has_lang_selected', 'true');">日本語</a>
+    <span class="divider">|</span>
+    <a href="../ko/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">한국어</a>
+    <span class="divider">|</span>
+    <a href="../zh-hans/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">简体中文</a>
+    <span class="divider">|</span>
+    <a href="../zh-hant/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">繁體中文</a>
+    <span class="divider">|</span>
+    <a href="../th/index.html" onclick="sessionStorage.setItem('has_lang_selected', 'true');">ไทย</a>
   </div>
 </footer>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
-    });
-  }, { threshold: 0.1 });
-  reveals.forEach(reveal => observer.observe(reveal));
-});
-</script>
 </body>
 </html>
