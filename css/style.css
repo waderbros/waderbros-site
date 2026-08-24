@@ -443,3 +443,14 @@ footer a:hover { text-decoration: underline; }
   color: #444446;
   user-select: none;
 }
+
+/* Global Text Wrapping & Helper Classes */
+h1, h2, h3 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+:lang(ko) { word-break: keep-all; }
+.nw { white-space: nowrap; }
+.sp-only { display: none; }
+@media (max-width: 768px) {
+  .sp-only { display: inline !important; }
+}
+

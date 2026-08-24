@@ -827,15 +827,38 @@ p, li {
   user-select: none;
 }
 
-/* Responsive Headline & Mobile Spacing Optimizations */
+/* Responsive Headline & Global Text Wrapping Rules */
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+p, li, .detail-text p {
+  text-wrap: pretty;
+}
+
+:lang(ko) {
+  word-break: keep-all;
+}
+
+.nw {
+  white-space: nowrap;
+}
+
+.sp-only {
+  display: none;
+}
+
 .responsive-headline {
   font-size: clamp(1.4rem, 4.8vw, 2.4rem) !important;
-  display: inline-block;
+  display: inline !important;
   max-width: 100%;
   line-height: 1.3;
 }
 
 @media (max-width: 768px) {
+  .sp-only {
+    display: inline !important;
+  }
   .home-hero {
     padding: 36px 16px 16px !important;
   }
@@ -860,5 +883,6 @@ p, li {
     padding: 36px 20px !important;
   }
 }
+
 
 
