@@ -450,12 +450,18 @@ p, li { text-wrap: pretty; }
 :lang(ko) { word-break: keep-all; }
 .nw { white-space: nowrap; }
 .sp-only { display: none; }
+@media (max-width: 1024px) {
+  .screenshot-gallery img {
+    height: 300px !important;
+  }
+}
 @media (max-width: 768px) {
   .sp-only { display: inline !important; }
   .screenshot-gallery img {
-    height: 330px !important;
-    margin: 0 10px;
+    height: 290px !important;
+    margin: 0 8px;
   }
 }
+
 
 
