@@ -865,6 +865,11 @@ p, li, .detail-text p {
   .watch-animations {
     padding: 20px 16px !important;
   }
+  .watch-animations video, .watch-animations img {
+    width: 88vw !important;
+    max-width: 320px !important;
+    height: auto !important;
+  }
   .quick-features {
     padding: 24px 16px !important;
     gap: 20px !important;
@@ -882,7 +887,22 @@ p, li, .detail-text p {
   footer {
     padding: 36px 20px !important;
   }
+  .phone-img {
+    height: 460px !important;
+    max-height: 65vh !important;
+  }
+  .screenshot-gallery img, .scrolling-track img {
+    height: 330px !important;
+  }
+  .sub-card-box {
+    height: 135px !important;
+  }
+  .watch-pair-grid img {
+    width: 240px !important;
+    max-width: 48% !important;
+  }
 }
+
 
 
 

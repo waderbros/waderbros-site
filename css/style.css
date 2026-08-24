@@ -452,5 +452,10 @@ p, li { text-wrap: pretty; }
 .sp-only { display: none; }
 @media (max-width: 768px) {
   .sp-only { display: inline !important; }
+  .screenshot-gallery img {
+    height: 330px !important;
+    margin: 0 10px;
+  }
 }
+
 
