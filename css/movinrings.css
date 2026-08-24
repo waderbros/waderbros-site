@@ -827,3 +827,38 @@ p, li {
   user-select: none;
 }
 
+/* Responsive Headline & Mobile Spacing Optimizations */
+.responsive-headline {
+  font-size: clamp(1.4rem, 4.8vw, 2.4rem) !important;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    padding: 36px 16px 16px !important;
+  }
+  .watch-animations {
+    padding: 20px 16px !important;
+  }
+  .quick-features {
+    padding: 24px 16px !important;
+    gap: 20px !important;
+  }
+  .q-feature h3 {
+    min-height: auto !important;
+    margin-bottom: 8px !important;
+  }
+  .btn-more {
+    margin-top: 16px !important;
+  }
+  .contact-section {
+    padding: 36px 20px !important;
+  }
+  footer {
+    padding: 36px 20px !important;
+  }
+}
+
+
