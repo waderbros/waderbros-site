@@ -416,9 +416,9 @@ p, li {
   color: #ffffff;
   font-weight: 700;
   line-height: 1.3;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  line-break: strict;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  text-wrap: balance !important;
 }
 @media (max-width: 1024px) {
   .detail-text h2 {
