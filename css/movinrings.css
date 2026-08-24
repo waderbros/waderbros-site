@@ -288,6 +288,9 @@ p, li {
   display: flex;
   align-items: center;
   justify-content: center; /* Reverted back to center */
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  text-wrap: balance !important;
 }
 .q-feature p {
   color: #d2d2d7; /* 読みやすい明るめのグレー */
