@@ -33,20 +33,28 @@ body.movinrings-page {
   color: var(--sr-fg);
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", sans-serif;
   margin: 0;
-  word-break: auto-phrase; /* 最新ブラウザ向け: 日本語の自然な文節改行 */
-  overflow-wrap: break-word; 
-  line-break: strict; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-p, li {
-  text-wrap: pretty; /* 行末の孤立単語を防ぐ */
+/* 全端末・全ブラウザ共通の安全で美しいタイポグラフィルール */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  line-break: strict !important;
+}
+
+p, li, .detail-text p {
+  text-wrap: pretty !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  line-break: strict !important;
 }
 
 .nw {
-  white-space: nowrap; /* 強制的な単語保護用 */
+  white-space: nowrap !important;
 }
 
 /* Header Adjustments for Dark Theme */
@@ -263,7 +271,7 @@ p, li {
 /* 3-Second Understanding Section (Quick Features) */
 .quick-features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 30px;
   padding: 40px 20px;
   max-width: 1000px;
@@ -294,9 +302,12 @@ p, li {
 }
 .q-feature p {
   color: #d2d2d7; /* 読みやすい明るめのグレー */
-  font-size: 1.1rem;
-  line-height: 1.7; /* 行間を広げて読みやすく */
+  font-size: 1.05rem;
+  line-height: 1.6; /* 行間を広げて読みやすく */
   font-weight: 400;
+  padding: 0 4px;
+  text-align: center !important;
+  text-wrap: pretty !important;
 }
 
 /* Complications Grid */
@@ -433,6 +444,7 @@ p, li {
   color: #d2d2d7;
   line-height: 1.8; /* More breathable line-height */
   margin-bottom: 14px;
+  text-align: left !important;
 }
 .detail-list {
   list-style: none;

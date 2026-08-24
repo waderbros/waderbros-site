@@ -25,6 +25,26 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
+
+/* 全端末・全ブラウザ共通の安全で美しいタイポグラフィルール */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  line-break: strict !important;
+}
+
+p, li {
+  text-wrap: pretty !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  line-break: strict !important;
+}
+
+.nw {
+  white-space: nowrap !important;
+}
+
 main {
   flex: 1 0 auto;
 }
@@ -277,11 +297,13 @@ footer a:hover { text-decoration: underline; }
   letter-spacing: -0.01em;
   color: var(--muted);
   line-height: 1.4;
+  text-align: left !important;
 }
 .main p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--fg);
+  text-align: left !important;
 }
 .main li {
   font-size: 1.1rem;
