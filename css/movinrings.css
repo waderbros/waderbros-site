@@ -977,11 +977,21 @@ p, li, .detail-text p {
   .sub-card-box img {
     max-height: 98% !important;
   }
+  .detail-images.watch-pair-grid, .watch-pair-grid {
+    flex-direction: row !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
   .watch-pair-grid img {
-    width: 190px !important;
+    width: 170px !important;
     max-width: 48% !important;
+    height: auto !important;
+    border-radius: 24px !important;
   }
 }
+
 
 
 
