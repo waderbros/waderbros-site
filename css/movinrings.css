@@ -69,18 +69,29 @@ p, li, .detail-text p {
 
 .movinrings-page .logo {
   mix-blend-mode: normal;
-  width: 180px;
+  width: 150px;
   height: auto;
   display: block;
 }
 
 .logo-badge {
   background: #fff;
-  padding: 6px 20px;
-  border-radius: 50px;
+  padding: 10px 28px;
+  border-radius: 999px;
   display: inline-flex;
   align-items: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+.movinrings-page .logo-tagline {
+  color: #d2d2d7;
+  font-size: 1.15rem;
+}
+@media (max-width: 768px) {
+  .movinrings-page .logo-tagline {
+    font-size: 1.05rem;
+  }
 }
 
 /* Buttons */
@@ -722,7 +733,7 @@ p, li, .detail-text p {
   .story-container, .summary-box { padding: 40px 20px; border-radius: 40px; }
   .scrolling-track img { height: 250px; }
   .movinrings-page .logo { width: 140px; }
-  .logo-badge { padding: 4px 15px; }
+  .logo-badge { padding: 8px 24px; }
   .detail-images.watch-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
