@@ -299,9 +299,18 @@ p, li, .detail-text p {
   width: 95%;
   margin: 0 auto;
 }
-@media (min-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1099px) {
   .quick-features {
-    grid-template-columns: repeat(4, 1fr); /* 常に4列で均等割り */
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 820px;
+    width: 88%;
+    gap: 32px 40px;
+    padding: 36px 24px;
+  }
+}
+@media (min-width: 1100px) {
+  .quick-features {
+    grid-template-columns: repeat(4, 1fr); /* PC・横画面では4列で均等割り */
     gap: 40px;
   }
 }
@@ -830,11 +839,12 @@ p, li, .detail-text p {
   align-items: center;
   gap: 6px 8px;
   max-width: 1200px;
+  padding: 0 24px;
   margin: 16px auto 0;
   font-size: 1.0rem;
   line-height: 1.6;
 }
-@media (min-width: 768px) {
+@media (min-width: 1081px) {
   .footer-lang-list {
     flex-wrap: nowrap;
     white-space: nowrap;
@@ -908,16 +918,41 @@ p, li, .detail-text p {
   object-fit: contain !important;
 }
 
-/* iPad / Tablet (max-width: 1024px) */
-@media (max-width: 1024px) {
+/* iPad / Tablet (769px to 1080px, including iPad Pro 12.9" / 13" portrait) */
+@media (min-width: 769px) and (max-width: 1080px) {
   .home-hero, .hero {
-    padding: 24px 20px !important;
+    padding: 28px 40px !important;
+  }
+  .watch-animations {
+    padding: 28px 40px !important;
+  }
+  .watch-animations > div {
+    gap: 24px !important;
+  }
+  .watch-animations video, .watch-animations img {
+    width: 250px !important;
+    height: 304px !important;
+    border-radius: 52px !important;
+  }
+  .watch-animations video[style*="350px"] {
+    width: 300px !important;
+    height: 677px !important;
+    border-radius: 48px !important;
   }
   .detail-feature {
-    padding: 16px 20px !important;
+    width: 90% !important;
+    padding: 24px 36px !important;
+  }
+  .summary-box, .story-container {
+    width: 90% !important;
+    padding: 56px 48px !important;
+  }
+  .content-page {
+    width: 90% !important;
+    padding: 0 36px !important;
   }
   .detail-feature-content {
-    gap: 16px !important;
+    gap: 24px !important;
   }
   .detail-text h2 {
     margin-bottom: 12px !important;

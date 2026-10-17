@@ -77,15 +77,15 @@ main {
   padding-left: 40px; /* Ensure minimum gap on desktop */
 }
 
-/* Responsive adjustment: Move Nav below Logo on smaller screens */
-@media (max-width: 850px) {
+/* Responsive adjustment: Move Nav below Logo on smaller / tablet screens */
+@media (max-width: 1080px) {
   .header-content {
     display: flex;
     flex-direction: column;
-    padding: 28px 20px 24px;
+    padding: 24px 32px 20px;
   }
   .header-nav {
-    margin-top: 24px;
+    margin-top: 20px;
     justify-content: center;
     width: 100%;
     padding-left: 0;
@@ -460,11 +460,12 @@ footer a:hover { text-decoration: underline; }
   align-items: center;
   gap: 6px 8px;
   max-width: 1200px;
+  padding: 0 24px;
   margin: 16px auto 0;
   font-size: 1.0rem;
   line-height: 1.6;
 }
-@media (min-width: 768px) {
+@media (min-width: 1081px) {
   .footer-lang-list {
     flex-wrap: nowrap;
     white-space: nowrap;
