@@ -89,7 +89,14 @@ p, li, .detail-text p {
   font-size: 1.15rem;
 }
 @media (max-width: 768px) {
+  .movinrings-page .header-content {
+    padding: 12px 16px 16px;
+  }
+  .movinrings-page .header-nav {
+    margin-top: 14px;
+  }
   .movinrings-page .logo-tagline {
+    margin-top: 10px;
     font-size: 1.05rem;
   }
 }
