@@ -939,24 +939,24 @@ p, li, .detail-text p {
     padding: 18px 16px 8px !important;
   }
   .watch-animations {
-    padding: 10px 16px !important;
+    padding: 10px 3.8vw !important;
   }
   .watch-animations > div {
-    gap: 20px !important;
+    gap: 4.5vw !important;
   }
   .watch-animations video, .watch-animations img {
-    width: 170px !important;
-    max-width: 48vw !important;
+    width: 41vw !important;
+    max-width: 190px !important;
     height: auto !important;
     aspect-ratio: 280 / 341 !important;
-    border-radius: 36px !important;
+    border-radius: 8.7vw !important;
   }
   .watch-animations video[style*="350px"] {
-    width: 182px !important;
-    max-width: 60vw !important;
-    height: 410px !important;
+    width: 44vw !important;
+    max-width: 205px !important;
+    height: auto !important;
     aspect-ratio: 350 / 790 !important;
-    border-radius: 30px !important;
+    border-radius: 7.2vw !important;
     border-width: 4px !important;
   }
   .quick-features {
