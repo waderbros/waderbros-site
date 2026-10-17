@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, li, .detail-text p {
-  text-wrap: pretty !important;
+  text-wrap: wrap !important;
   word-break: normal !important;
   overflow-wrap: break-word !important;
   line-break: strict !important;
@@ -116,6 +116,9 @@ p, li, .detail-text p {
 .app-section {
   padding: 0;
   border-bottom: 1px solid #333;
+}
+.app-section:last-of-type {
+  border-bottom: none;
 }
 
 /* Hero Section */
@@ -318,7 +321,7 @@ p, li, .detail-text p {
   font-weight: 400;
   padding: 0 4px;
   text-align: center !important;
-  text-wrap: pretty !important;
+  text-wrap: wrap !important;
 }
 
 /* Complications Grid */
@@ -760,7 +763,7 @@ p, li, .detail-text p {
 }
 @media (max-width: 480px) {
   html {
-    font-size: 14px;
+    font-size: calc(14 * 100vw / 414);
   }
   .movinrings-page .logo {
     width: 120px;
@@ -859,7 +862,7 @@ h1, h2, h3 {
 }
 
 p, li, .detail-text p {
-  text-wrap: pretty;
+  text-wrap: wrap;
 }
 
 :lang(ko) {
@@ -1031,10 +1034,24 @@ p, li, .detail-text p {
   }
 }
 
-
-
-
-
-
-
-
+/* iPhone XR (414px) 基準の画面幅比例パディング・インデント調整 (max-width: 480px) */
+@media (max-width: 480px) {
+  .detail-feature {
+    padding: calc(12rem / 14) 1rem !important;
+  }
+  .detail-list li {
+    padding-left: 2rem;
+  }
+  .detail-list li.no-bullet {
+    padding-left: 0;
+  }
+  .story-container, .summary-box {
+    padding: calc(40rem / 14) calc(20rem / 14);
+  }
+  .summary-box ol, .summary-box ul {
+    padding-left: calc(24rem / 14);
+  }
+  .content-page {
+    padding: 0 calc(20rem / 14);
+  }
+}
