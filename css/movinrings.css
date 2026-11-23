@@ -718,6 +718,38 @@ p, li, .detail-text p {
   color: var(--sr-accent);
   text-decoration: underline;
 }
+.contact-social {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 22px;
+}
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #333336;
+  color: #86868b;
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.social-icon-btn:hover,
+.social-icon-btn:focus-visible {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #555558;
+  transform: translateY(-1px);
+}
+.social-icon-btn svg {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+  display: block;
+}
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
